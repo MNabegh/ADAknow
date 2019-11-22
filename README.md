@@ -20,13 +20,11 @@ We've brought forward 3 big research questions we want to tackle on. We've also 
 
 3. Do violations and inspections reflect deeper biases?
 	1. Are restaurants that failed the inspection clustered in certain areas of the city? Similarly, are restaurants that pass the test located in certain parts of the city?
-	2. How does the number of violations and inspections correspond with the (perceived) wealthiness of each neighborhood of Chicago? Do poorer parts of Chicago receive more inspections and/or violations? Is there any correlation with the prevalent ethnicity in these areas?
+	2. Is there any correlation between the number of violations and inspections with the (perceived) ethnicity of each neighborhood of Chicago?
 	3. Is there a relationship between the inspections and restaurants' popularity on Google Local Review?
 
 # Dataset
 - **Chicago food inspection**: This dataset contains food inspections report from establishments located in Chicago from 2010 until now. The different columns contain information about the businesses themselves as well as about the inspections. 
-
-- **Household income**: This data is available here: https://statisticalatlas.com/place/Illinois/Chicago/Household-Income and made openly available by statistical atlas. The map integrating that data will be particularly useful when looking for correlations.
 
 - **Ethnicity**:  https://www.census.gov/data/datasets/2016/dec/rdo/2013-2017-CVAP.html. This data groups the ethnicities of all people able to legally vote in the US. 
 
