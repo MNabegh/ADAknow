@@ -10,45 +10,38 @@ In order to achieve this, we will dive into the Chicago Food Inspection as well 
 # Research questions
 We've brought forward 3 big research questions we want to tackle on. We've also divided them into sub-questions, representing distinct chunks of analysis efforts:
 1. How fair are inspections?
-	1. Which type of restaurants is being controlled the most? And which type of restaurant tend to pass the test the most? 
-	2. What is the relationship between "at risk" and failing to pass the inspection?
-	3. Do the inspection patterns change for large chain restaurants [from Starbucks and McDonald's] compared to smaller independent ones? 
+	- Which type of restaurants is being controlled the most? And which type of restaurant tend to pass the test the most? 
+	- Do the inspection patterns change for large chain restaurants [i.e. from Starbucks and McDonald's] compared to smaller independent ones? 
 
 2. How much do violations correlate with external events?
-	1. How are violations/failed inspections sensitive to permanent external factors such as neighbourhood, type of establishments?
-	2. How do violations/failed inspections correlate with temporary factors such as season, and time of the year? That is, for a given area, are violations more or less regular, or are they susceptible to external factors, such as temperature?
+	- How are violations/failed inspections sensitive to permanent external factors such as neighbourhood, type of establishments?
+	- How do violations/failed inspections correlate with temporary factors such as season, and time of the year? That is, for a given area, are violations more or less regular, or are they susceptible to external factors, such as temperature?
 
 3. Do violations and inspections reflect deeper biases?
-	1. Are restaurants that failed the inspection clustered in certain areas of the city? Similarly, are restaurants that pass the test located in certain parts of the city?
-	2. Is there any correlation between the number of violations and inspections with the (perceived) ethnicity of each neighborhood of Chicago?
-	3. Is there a relationship between the inspections and restaurants' popularity on Google Local Review?
+	- Is there any correlation between the number of violations and inspections with the (perceived) ethnicity of each neighborhood of Chicago?
+	- Is there a relationship between the inspections and restaurants' popularity on Google Local Review?
 
-# Dataset
+# Datasets
 - **Chicago food inspection**: This dataset contains food inspections report from establishments located in Chicago from 2010 until now. The different columns contain information about the businesses themselves as well as about the inspections. 
 
 - **Ethnicity**:  https://www.census.gov/data/datasets/2016/dec/rdo/2013-2017-CVAP.html. This data groups the ethnicities of all people able to legally vote in the US. 
 
 - **Google reviews**:  https://cseweb.ucsd.edu/~jmcauley/datasets.html. The reviews put on google will allow us to see if the compliancy of a restaurant to follow health regulations correlates with the reviews received on this platform.
 
+# Milestones & Schedule
+*NB: A more detailed schedule and breakdown can be found in `milestones.md`.*
 
-# A list of internal milestones up until project milestone 2
-*NB: A more detailed schedule can be found in `milestones.md`.*
-1. **Sprint 1 (ends 04/11):** 
-   - Data Summarization
-   - Data Wrangling
+1. **Sprint 1 (ends 02/12):** 
+   - Finish answering question 1
 
-2. **Sprint 2 (ends 11/11):**
-   - Understanding the data: answer question 1
+2. **Sprint 2 (ends 09/12):**
+   - Finish answering question 2
+   
+3. **Sprint 3 (ends 16/12):**
+   - Continue answering question 3
 
-3. **Sprint 3 (ends 18/11):**
-   - Understanding the data: answer question 1(cont.)
-   - Delivery for question 1
-
-4. **Sprint 4 (ends 25/11):**
-   - Delivery for question 1 (cont.)
-   - Add datasets to answer questions 2 and 3
-   - Data Summarization
+4. **Sprint 4 (ends 20/12):**
+   - Finish answering question 3 (cont.)
+   - Finish writing the data story
 
 
-# Questions for TAs
-Add here some questions you have for us, in general or project-specific.
