@@ -1,0 +1,27 @@
+[
+  
+    {
+
+      "title"    : "Intro",
+      "url"      : "/ADAknow/intro/",
+      "category" : "",
+      "date"     : "December 14, 2019"
+    } ,
+  
+    {
+
+      "title"    : "Size",
+      "url"      : "/ADAknow/size/",
+      "category" : "",
+      "date"     : "December  2, 2019"
+    } ,
+  
+    {
+
+      "title"    : "Type",
+      "url"      : "/ADAknow/type/",
+      "category" : "",
+      "date"     : "December  1, 2019"
+    } 
+  
+]

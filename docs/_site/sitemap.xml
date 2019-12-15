@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/ADAknow/type/</loc>
+<lastmod>2019-12-01T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/size/</loc>
+<lastmod>2019-12-02T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/intro/</loc>
+<lastmod>2019-12-14T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/404</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/categories/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/getting-started/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ADAknow/search/</loc>
+</url>
+</urlset>
