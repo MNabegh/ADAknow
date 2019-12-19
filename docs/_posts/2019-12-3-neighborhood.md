@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Type
-excerpt: What is the impact of <span class="emphasis">the business type</span>?
-small_excerpt: the business type?
+title: Neighborhood
+excerpt: What is the impact of <span class="emphasis">the neighborhood</span>?
+small_excerpt: the neighborhood?
 ---
 
-<!-- facility type + "macro" category -->
+<!-- geo + eth -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 

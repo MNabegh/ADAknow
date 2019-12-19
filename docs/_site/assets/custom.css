@@ -23,7 +23,7 @@ span.emphasis {
   position: fixed;
   right: 20px;
   top: 130px;
-  width: 200px;
+  width: 215px;
   z-index: 1100;
 }
 
@@ -58,7 +58,7 @@ span.emphasis {
     margin-left: 70px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
   .sticky-container {
     right: 10px;
     width: 170px;

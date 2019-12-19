@@ -10,6 +10,30 @@
   
     {
 
+      "title"    : "Reviews",
+      "url"      : "/ADAknow/reviews/",
+      "category" : "",
+      "date"     : "December  5, 2019"
+    } ,
+  
+    {
+
+      "title"    : "Time",
+      "url"      : "/ADAknow/time/",
+      "category" : "",
+      "date"     : "December  4, 2019"
+    } ,
+  
+    {
+
+      "title"    : "Neighborhood",
+      "url"      : "/ADAknow/neighborhood/",
+      "category" : "",
+      "date"     : "December  3, 2019"
+    } ,
+  
+    {
+
       "title"    : "Size",
       "url"      : "/ADAknow/size/",
       "category" : "",

@@ -8,9 +8,6 @@ $(document).ready(function(){
     });
 
     $('ul.sticky a').click(function(e) {
-
-        console.log('here')
-
         // scrolling
         var url = e.target.href;
         var hash = url.substring(url.indexOf("#")+1);
