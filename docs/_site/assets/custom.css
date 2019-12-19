@@ -6,17 +6,6 @@ span.emphasis {
   font-weight: bolder;
 }
 
-.fade {
-  background-image: linear-gradient(transparent 3%, currentColor 20%, currentColor 75%, transparent 98%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-attachment: fixed;
-}
-
-.fade > * {
-  color: transparent;
-}
-
 .sticky-container {
   padding: 0px;
   margin: 0px;
@@ -78,4 +67,7 @@ span.emphasis {
     margin-left: auto;
     margin-right: auto;
   }
+}
+#chartoptions button {
+  margin-right: 20px;
 }
