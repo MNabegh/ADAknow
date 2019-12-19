@@ -1,0 +1,73 @@
+h2 a {
+  padding-top: 15px;
+}
+
+span.emphasis {
+  font-weight: bolder;
+}
+
+.sticky-container {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: 20px;
+  top: 130px;
+  width: 215px;
+  z-index: 1100;
+}
+
+.sticky li {
+  text-decoration: underline;
+  font-weight: bolder;
+  list-style-type: none;
+  background-color: #fff;
+  color: #efefef;
+  line-height: normal;
+  padding: 0 0 10px 0;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.sticky li a {
+  color: black;
+}
+
+.sticky li:hover {
+  margin-left: -15px;
+}
+.sticky li:hover a {
+  color: teal;
+}
+
+@media (max-width: 1100px) {
+  div#main {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1030px) {
+  .sticky-container {
+    right: 10px;
+    width: 170px;
+  }
+}
+@media (max-width: 970px) {
+  div#main {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 920px) {
+  .sticky-container {
+    display: none;
+  }
+
+  div#main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#chartoptions button {
+  margin-right: 20px;
+}
