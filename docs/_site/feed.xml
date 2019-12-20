@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T17:09:54+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;!-- &lt;img src=&quot;/ADAknow/images/chicago.jpg&quot; style=&quot;position: absolute; opacity: 0.2; left: 0; z-index: -1; top: 110px; height: 600px;&quot;/&gt; --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T17:51:38+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;!-- &lt;img src=&quot;/ADAknow/images/chicago.jpg&quot; style=&quot;position: absolute; opacity: 0.2; left: 0; z-index: -1; top: 110px; height: 600px;&quot;/&gt; --&gt;
 
 &lt;h1 id=&quot;we-are-where-we-eat&quot;&gt;We are where we eat&lt;/h1&gt;
-&lt;p&gt;We are shaped by what we eat. But we also shape where we eat. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play?&lt;/p&gt;
+&lt;p&gt;We are shaped by what we eat. But we are also shaped by where we eat. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play?&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;We will do a deep dive into Chicago’s food inspection scene and everything happening behind the curtain.&lt;/p&gt;
@@ -23,16 +23,12 @@
 
 &lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
 
-&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business size?</summary></entry><entry><title type="html">Neighborhood</title><link href="http://localhost:4000/ADAknow/neighborhood/" rel="alternate" type="text/html" title="Neighborhood" /><published>2019-12-02T00:00:00+01:00</published><updated>2019-12-02T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/neighborhood</id><content type="html" xml:base="http://localhost:4000/ADAknow/neighborhood/">&lt;!-- Me! --&gt;
-&lt;p&gt;As we have just seen type of establishment definitely affects, to some degree, the probability of passing of failing an inspection. However, this may simply reflect underlying factors. A mobile food vendor, for example, is likely to have fewer financial resources than a daycare or school owner (the main entities in the infant care category). As such, the later will definitely be able to invest more into ensuring proper kitchen and serving conditions.&lt;/p&gt;
-
-&lt;p&gt;Other permanent factors affect a business, but maybe none more than its location. In the data, the business have one of 68 distinct possible zip codes. To simplify for a first analysis, we grouped them into 7 zones, based on &lt;a href=&quot;https://www.seechicagorealestate.com/chicago-zip-codes-by-neighborhood.php&quot;&gt;Chigaco's Fultron Grace real estate data&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business size?</summary></entry><entry><title type="html">Neighborhood</title><link href="http://localhost:4000/ADAknow/neighborhood/" rel="alternate" type="text/html" title="Neighborhood" /><published>2019-12-02T00:00:00+01:00</published><updated>2019-12-02T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/neighborhood</id><content type="html" xml:base="http://localhost:4000/ADAknow/neighborhood/">&lt;p&gt;Apart from the type of service provided, other permanent factors affect a business, but maybe none more than its location. In the data, the business have one of 68 distinct possible zip codes. To simplify for a first analysis, we grouped them into 7 zones, based on &lt;a href=&quot;https://www.seechicagorealestate.com/chicago-zip-codes-by-neighborhood.php&quot;&gt;Chigaco's Fultron Grace real estate data&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;On the other hand, (without considering prevalent ethnicities in each city block but instead) grouping by the more general zones, we can observe that, with this splitting method there are no observable differences in the probability of a facility's likelihood to pass an inspection. However, we will take a deeper look, using a geographical split based on prevalent ethnicities to assess whether this still remains the case.&lt;/p&gt;
 
 &lt;hr style=&quot;opacity: 0.2;&quot; /&gt;
 
-&lt;!-- Jade --&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
 
 &lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
@@ -63,7 +59,9 @@
 &lt;/ul&gt;
 &lt;div id=&quot;pf_chart&quot;&gt;&lt;/div&gt;
 
-&lt;p&gt;Overall, it appears that the inspections do indeed reflect the food business landscape in Chicago, as there aren’t strong correlations with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. As such, the results and inspections frequencies seem to be well balanced!&lt;/p&gt;
+&lt;p&gt;As we can observe, the probability of passing of failing an inspection is affected by the business type. However, this may simply reflect underlying factors. A mobile food vendor, for example, is likely to have fewer financial resources than a daycare or school owner (the main entities in the infant care category). As such, the later will definitely be able to invest more into ensuring proper kitchen and serving conditions.&lt;/p&gt;
+
+&lt;p&gt;Finally, overall, it appears that the inspections do indeed reflect the food business landscape in Chicago, as there aren't strong correlations with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. As such, the results and inspections frequencies seem to be well balanced!&lt;/p&gt;
 
 &lt;!-- JS --&gt;
 &lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot; integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -342,13 +340,13 @@
     }
     for (i in facility_types) {
         $('#chartoptions li#catgs ul').append(
-            `&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;`+facility_types[i]['title']+`&lt;/a&gt;&lt;/li&gt;`);
+            `&lt;li class=&quot;dropdown-item&quot;&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;`+facility_types[i]['title']+`&lt;/a&gt;&lt;/li&gt;`);
     }
     $('#chartoptions li#types ul').append(
-        `&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;All types&lt;/a&gt;&lt;/li&gt;`);
+        `&lt;li class=&quot;dropdown-item&quot;&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;All types&lt;/a&gt;&lt;/li&gt;`);
     for (i in all_types) {
         $('#chartoptions li#types ul').append(
-            `&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;`+all_types[i]+`&lt;/a&gt;&lt;/li&gt;`);
+            `&lt;li class=&quot;dropdown-item&quot;&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;`+all_types[i]+`&lt;/a&gt;&lt;/li&gt;`);
     }
     $('#types-dropdown li a').click(function(e) {
         // update breadcrumbs
@@ -375,10 +373,10 @@
         // update types 
         for (i in facility_types) {
             if (catg_name == facility_types[i]['title']) {
-                $('#chartoptions li#types ul').html(`&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;All types&lt;/a&gt;&lt;/li&gt;`);
+                $('#chartoptions li#types ul').html(`&lt;li class=&quot;dropdown-item&quot;&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;All types&lt;/a&gt;&lt;/li&gt;`);
                 for (j in facility_types[i]['lst']) {
                     $('#chartoptions li#types ul').append(
-                        `&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;` +
+                        `&lt;li class=&quot;dropdown-item&quot;&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;` +
                         facility_types[i]['lst'][j] + `&lt;/a&gt;&lt;/li&gt;`);
                 }
                 // update types dropdown and re-add event listeners
