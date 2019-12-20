@@ -10,7 +10,12 @@ small_excerpt: the neighborhood?
 <p>As a multicultural city, <a href='https://www.chicago.gov/city/en/about.html'>Chicago</a> is well known for the diversity of its neighbourhood, and the harmony reigning among all its citizens. It is thus only natural that we investigate the relationship between the dominating ethnicity of each neighbourhood and the food establishments disseminated all throughout Chicago.</p>
 <p>But are they uniformely disseminated over the whole city?
 <br>
-On the map below, the radius of the different bubbles is directly proportional to the amount of restaurants in that zipcode region, normalised by the areas of each zip. Most restaurants are concentrated in the city centre, near the coast. Coincidentally, this also corresponds to the neighbourhoods where the population is primarily white. Because we broke down the city into zip code area, which are fairly large, the three predominant ethnicities were the following: "White Alone Population", "Black and African American Population" and "Hispanic or Latino Population".</p>
+On the map below, the radius of the different bubbles is directly proportional to the amount of restaurants in that zipcode region, normalised by the areas of each zip. Most restaurants are concentrated in the city centre, near the coast. Coincidentally, this also corresponds to the neighbourhoods where the population is primarily white. Because we broke down the city into zip code area, which are fairly large, the three predominant ethnicities were the following: 
+<span style="font-family: monospace;font-size: 0.9em; color: white; background:#87cefa; border-radius: 10%; padding: 0.5% 0.75%;">"White Alone Population"</span>, 
+<span style="font-family: monospace;font-size: 0.9em; color: white; background:#1e90ff; border-radius: 10%; padding: 0.5% 0.75%;">"Black and African American Population"</span>
+ and 
+ <span style="font-family: monospace;font-size: 0.9em; color: white; background:#90ee90; border-radius: 10%; padding: 0.5% 0.75%;">"Hispanic or Latino Population"</span>
+.</p>
 
 
 
