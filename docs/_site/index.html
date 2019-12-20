@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>ADAknow – We are where we eat</title>
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>ADAknow | We are where we eat</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="ADAknow" />
 <meta name="author" content="Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said" />
 <meta property="og:locale" content="en_US" />
@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://localhost:4000/ADAknow/" />
 <meta property="og:site_name" content="ADAknow" />
 <script type="application/ld+json">
-{"@type":"WebSite","headline":"ADAknow","url":"http://localhost:4000/ADAknow/","name":"ADAknow","author":{"@type":"Person","name":"Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said"},"description":"We are where we eat","@context":"https://schema.org"}</script>
+{"name":"ADAknow","description":"We are where we eat","author":{"@type":"Person","name":"Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said"},"@type":"WebSite","url":"http://localhost:4000/ADAknow/","headline":"ADAknow","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
         <meta charset="utf-8" />
@@ -113,6 +113,7 @@
 </blockquote>
 
 <p style="position: relative">To achieve this, we will pore over <span class="it_tooltip" data-tip="Chicago's Food Inspection Dataset is generated from inspections of restaurants and other food establishments in Chicago from January 1, 2010, to the present. Inspections are performed by staff from the Chicago Department of Public Health’s Food Protection Program using a standardized procedure. The results of the inspection are inputted into a database, then reviewed and approved by a State of Illinois Licensed Environmental Health Practitioner (LEHP).">Chicago's Food Inspections dataset</span>, and answer five big questions: 
+<strong>what is the impact, on a food-related business, of... its business type? Its neighborhood? Its size or scale? Of the time of the year? And of its social media reviews?</strong>
 </p>
 
     </div>
@@ -505,14 +506,52 @@
            <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
         </a>
       </h2>
-      <div id="Neighborhood" class="collapse show"><p>Apart from the type of service provided, other permanent factors affect a business, but maybe none more than its location. In the data, the business have one of 68 distinct possible zip codes. To simplify for a first analysis, we grouped them into 7 zones, based on <a href="https://www.seechicagorealestate.com/chicago-zip-codes-by-neighborhood.php">Chigaco's Fultron Grace real estate data</a>. However, with this splitting method there are no observable differences in the probability of a facility's likelihood to pass or fail an inspection. As such, we will take a deeper look, using a geographical split based on prevalent ethnicities to assess whether this still remains the case.</p>
+      <div id="Neighborhood" class="collapse show"><p><b>Chicago - A Multicultural City</b></p>
+<p>As a multicultural city, <a href="https://www.chicago.gov/city/en/about.html">Chicago</a> is well known for the diversity of its neighbourhood, and the harmony reigning among all its citizens. It is thus only natural that we investigate the relationship between the dominating ethnicity of each neighbourhood and the food establishments disseminated all throughout Chicago.</p>
+<p>But are they uniformely disseminated over the whole city?
+<br />
+On the map below, the radius of the different bubbles is directly proportional to the amount of restaurants in that zipcode region, normalised by the areas of each zip. Most restaurants are concentrated in the city centre, near the coast. Coincidentally, this also corresponds to the neighbourhoods where the population is primarily white. Because we broke down the city into zip code area, which are fairly large, the three predominant ethnicities were the following: 
+<span style="font-family: monospace;font-size: 0.9em; color: white; background:#87cefa; border-radius: 10%; padding: 0.5% 0.75%;">"White Alone Population"</span>, 
+<span style="font-family: monospace;font-size: 0.9em; color: white; background:#1e90ff; border-radius: 10%; padding: 0.5% 0.75%;">"Black and African American Population"</span>
+ and 
+ <span style="font-family: monospace;font-size: 0.9em; color: white; background:#90ee90; border-radius: 10%; padding: 0.5% 0.75%;">"Hispanic or Latino Population"</span>
+.</p>
 
-<hr style="opacity: 0.2;" />
+<iframe src="/ADAknow/map" style="width: 100%; height: 400px;"></iframe>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+<p><b>Inspections and Restaurants - Fair Distribution or Bias?</b></p>
+<p>
+	It is not surprising to find a majority of the restaurants located in white neighbourhoods, as most of Chicago is dominated by a mostly white population. 37 parts of Chicago are primarily white, 19 are mostly black and african american while 11 are principally latino or hispanic. The amount of inspections each establishments benefit from is also fairly equal accross the neighbourhoods dominated by different ethnicities.
+</p>
+<p>
+	However, if we look into the google reviews and into the number of food establishments that has not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This either means that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on google reviews than restaurants located in other areas. Or this means that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
+	<iframe src="/ADAknow/plots/ratioEthnicity.html" style="width: 100%; height: 400px;"></iframe>
 
-<p>Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.</p>
+</p>
+<p>
+	Nonetheless, even if it was the case that you have a larger chance of being controlled when not based in a predominantly white neighbourhood, your odds of success are not impacted. Indeed, the chances of passing, failing or going out of business do not change much with the predominant ethnicity of your vicinity.
+	<iframe src="/ADAknow/plots/passFailOob.html" style="width: 100%; height: 400px;"></iframe>
+</p>
 
+<p><b>Settling in Coloured Neighbourhoods</b></p>
+<p>
+	From the data we have collected so far, it seems like moving to a neighbourhood that is not primarily white will either increase your chances of being inspected or lower your chances of being found on google reviews. 
+	<br /><i>
+	So why should you settle into those areas? </i>
+	<br />
+	Easy answer!<br />
+	The area one must explore before making sure one can find a restaurant varies among the different neighbourhoods. Statistically, with similarly interesting business, one based in a sparse neighbourhood in terms of food establishments will attract more clients than one located in a foodie area.
+	<iframe src="/ADAknow/plots/areaRestaurants.html" style="width: 100%; height: 400px;"></iframe>
+</p>
+<p>
+	This might not be true in the case where a sparse area in terms of restaurants is also sparse in terms of inhabitants. However, this is not the case in Chicago. Food businesses located in Black and African American neighbourhoods might have on average more clients than if they were based in another neighbourhood.
+	<iframe src="/ADAknow/plots/habPerResto.html" style="width: 100%; height: 400px;"></iframe>
+</p>
+
+<p><b>Violations per Neighbourhood</b></p>
+<p>
+	For mere curiosity, or deeper insight, the following plots displays the distribution of violations for each of the ethnicity present in our dataset.
+</p>
 <div class="dropdown" style="padding-left: 10%;">
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dedede;">Change plot type  
   </button>
@@ -531,10 +570,6 @@
 <div id="1e38adb2-a7f7-4858-b207-fe98c1292e28" class="plotly-graph-div" style="display: none;"></div>
 <div id="e2253a01-4bfc-40ef-b0da-db6e7e41fad0" class="plotly-graph-div" style="display: none;"></div>
 <div id="55807f9e-8d15-45ec-9772-a19c0f25eddc" class="plotly-graph-div" style="display: none;"></div>
-
-<p>Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
-
-<iframe src="/ADAknow/map" style="width: 100%; height: 400px;"></iframe>
 
 <!-- JS -->
 <script>
@@ -642,7 +677,6 @@
            <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
         </a>
       </h2>
-<<<<<<< HEAD
       <div id="Time" class="collapse show"><p>People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.
 <!-- you should be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect. --></p>
 
@@ -656,21 +690,6 @@
 <p>As we can see, the temperature and the time of the year do not signficantly affect the percentage of failed inspections.</p>
 
 <p>However, a further look into the data shows us that multiple violations, especially those with codes 2 and 3 have a distribution that is highly skewed - with signficantly more occurences for high temperature, this presents a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example of that is the following plot.</p>
-=======
-      <div id="Time" class="collapse show"><p>People’s lifestyle and needs changes with the year passing, so we investigate what should you be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect.</p>
-
-<div class="column">
-<div class="wrapperDoughnut" id="cherry"></div>
-</div>
-
-<div class="column">
-<div class="wrapperDoughnut" id="car"></div>
-</div>
-
-<p>As we can see here the temperature and the time of the year does not affect the percentage of failed inspections signficantly.</p>
-
-<p>But then a further look into the data shows us that multiple violations especially those with codes 2 and 3 have a distribution, that is highly skewed with way more occurences for high temperature, this present a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example of that is the following plot.</p>
->>>>>>> db0702de6416801b7fc45ef5822719331ded4822
 
 <div class="column">
 <div class="wrapperDoughnut" id="timeline-chart"></div>
@@ -700,17 +719,10 @@
                 formatter: function (val) {
                     return val + "%";
                 },
-<<<<<<< HEAD
                 offsetY: 3,
                 style: {
                     fontSize: '12px',
                     colors: ["#ffffff"]
-=======
-                offsetY: -20,
-                style: {
-                    fontSize: '12px',
-                    colors: ["#304758"]
->>>>>>> db0702de6416801b7fc45ef5822719331ded4822
                 }
             },
             series: [{
@@ -729,8 +741,6 @@
                 axisTicks: {
                     show: false
                 },
-<<<<<<< HEAD
-=======
                 crosshairs: {
                     fill: {
                         type: 'gradient',
@@ -743,7 +753,6 @@
                         }
                     }
                 },
->>>>>>> db0702de6416801b7fc45ef5822719331ded4822
                 tooltip: {
                     enabled: true,
                     offsetY: -35,
@@ -791,7 +800,6 @@
         );
         chart.render();
     }
-<<<<<<< HEAD
     function plot_temp() {
         var options = {
             chart: {
@@ -955,178 +963,6 @@
         var chart = new ApexCharts(document.querySelector("#timeline-chart"), options);
         chart.render();
     }
-=======
-        function plot_temp() {
-            var options = {
-                    chart: {
-                        height: 350,
-                        type: 'bar',
-                    },
-                    plotOptions: {
-                        bar: {
-                            dataLabels: {
-                                position: 'top', // top, center, bottom
-                            },
-                        }
-                    },
-                    dataLabels: {
-                        enabled: true,
-                        formatter: function (val) {
-                            return val + "°C";
-                        },
-                        offsetY: -20,
-                        style: {
-                            fontSize: '12px',
-                            colors: ["#304758"]
-                        }
-                    },
-                    series: [{
-                        name: 'Temperature',
-                        data: [30.72, 34.43, 46.84, 58.72, 70.94, 80.41, 85.0, 82.92, 75.93, 62.94, 47.61, 36.76]
-                    }],
-                    xaxis: {
-                        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                        position: 'top',
-                        labels: {
-                            offsetY: -18,
-                        },
-                        axisBorder: {
-                            show: false
-                        },
-                        axisTicks: {
-                            show: false
-                        },
-                        crosshairs: {
-                            fill: {
-                                type: 'gradient',
-                                gradient: {
-                                    colorFrom: '#D8E3F0',
-                                    colorTo: '#BED1E6',
-                                    stops: [0, 100],
-                                    opacityFrom: 0.4,
-                                    opacityTo: 0.5,
-                                }
-                            }
-                        },
-                        tooltip: {
-                            enabled: true,
-                            offsetY: -35,
-                        }
-                    },
-                    fill: {
-                        gradient: {
-                            shade: 'light',
-                            type: "horizontal",
-                            shadeIntensity: 0.25,
-                            gradientToColors: undefined,
-                            inverseColors: true,
-                            opacityFrom: 1,
-                            opacityTo: 1,
-                            stops: [50, 0, 100, 100]
-                        },
-                        colors: ['#730000']
-                    },
-                    yaxis: {
-                        axisBorder: {
-                            show: false
-                        },
-                        axisTicks: {
-                            show: false,
-                        },
-                        labels: {
-                            show: false,
-                            formatter: function (val) {
-                                return val + "°C";
-                            },
-                        },
-                    },
-                    title: {
-                        text: 'Average maximum temperature by month from 2010-2019',
-                        floating: true,
-                        offsetY: 320,
-                        align: 'center',
-                        style: {
-                            color: '#444'
-                        }
-                    },
-                };
-                var chart = new ApexCharts(
-                    document.querySelector("#car"),
-                    options
-                );
-                chart.render();
-            }
-            function plot_hist()
-            {
-                var options = {
-                    chart: {
-                        type: "histogram",
-                        height: 380,
-                        foreColor: "#999",
-                        events: {
-                        dataPointSelection: function(e, chart,opts) {
-                            var arraySelected = []
-                            opts.selectedDataPoints.map((selectedIndex) => {
-                            selectedIndex.map((s) => {
-                                arraySelected.push(chart.w.globals.series[0][s])
-                            })
-                            });
-                            arraySelected = arraySelected.reduce((acc, curr) => acc + curr, 0)                                        
-                            document.querySelector("#selected-count").innerHTML = arraySelected
-                        }
-                        }
-                    },
-                    plotOptions: {
-                        bar: {
-                        dataLabels: {
-                            enabled: false
-                        }
-                        }
-                    },
-                    series: [{
-                        name: "#Occurences",
-                        data: [190, 419, 386, 395, 564, 832, 1207, 68]
-                    }],
-                    states: {
-                        active: {
-                        allowMultipleDataPointsSelection: true
-                        }
-                    },
-                    xaxis: {
-                        categories: ['20-30°C', '30-40°C', '40-50°C', '50-60°C', '60-70°C', '70-80°C', '80-90°C', '90-100°C'],
-                        axisBorder: {
-                        show: false
-                        },
-                        axisTicks: {
-                        show: false
-                        }
-                    },
-                    yaxis: {
-                        tickAmount: 4,
-                        labels: {
-                        offsetX: -5,
-                        offsetY: -5
-                        },
-                    },
-                    tooltip: {
-                        x: {
-                        format: "dd MMM yyyy"
-                        },
-                    },
-                    title: {
-                        text: 'Histogram of temperature distribution over violations of code 2',
-                        floating: true,
-                        offsetY: 320,
-                        align: 'center',
-                        style: {
-                            color: '#444'
-                        }
-                    },
-                };
-                var chart = new ApexCharts(document.querySelector("#timeline-chart"), options);
-                chart.render();
-            }
->>>>>>> db0702de6416801b7fc45ef5822719331ded4822
     generate_plot()
     plot_temp()
     plot_hist()
