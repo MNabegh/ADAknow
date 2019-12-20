@@ -26,7 +26,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 	It is not surprising to find a majority of the restaurants located in white neighbourhoods, as most of Chicago is dominated by a mostly white population. 37 parts of Chicago are primarily white, 19 are mostly black and african american while 11 are principally latino or hispanic. The amount of inspections each establishments benefit from is also fairly equal accross the neighbourhoods dominated by different ethnicities.
 </p>
 <p>
-	However, if we look into the google reviews and into the number of food establishments that has not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This either means that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on google reviews than restaurants located in other areas. Or this means that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
+	However, if we look into the number of food establishments that has not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This either means that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on Google Local than restaurants located in other areas. Or this means that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
 	<iframe src="{{ site.baseurl }}/plots/ratioEthnicity.html" style="width: 100%; height: 400px;"></iframe>
 
 </p>
@@ -37,7 +37,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <b>Settling in Coloured Neighbourhoods</b>
 <p>
-	From the data we have collected so far, it seems like moving to a neighbourhood that is not primarily white will either increase your chances of being inspected or lower your chances of being found on google reviews. 
+	From the data we have collected so far, it seems like moving to a neighbourhood that is not primarily white will either increase your chances of being inspected or lower your chances of being found on Google Local (Google Maps). 
 	<br><i>
 	So why should you settle into those areas? </i>
 	<br>
