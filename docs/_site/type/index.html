@@ -171,7 +171,6 @@
 
 <script>
     function generate_pf_plot(top, middle, bottom) {
-        console.log('tesst')
         var options = {
             chart: {
                 height: 350,
@@ -242,18 +241,22 @@
         );
         pf_chart.render();
     }
-    function get_catg_pf_ratios(catg_name, facility_types) {
+    function get_catg_pf_ratios(catg_name, facility_types, pf_ratios) {
+        // check for placeholder
+        if (catg_name == 'All categories') {
+            return pf_ratios['all']['all']
+        }
         // search existing
         for (i in facility_types) {
             if (catg_name == facility_types[i]['title']) {
                 return pf_ratios['per_category'][catg_name];
             }
         } 
-        // otherwise, 'all catgs' selected
+        // otherwise, default
         return pf_ratios['all']['all']
     }
-    function get_catg_type_pf_ratios(type_name, catg_name, facility_types) {
-        catg_array = get_catg_pf_ratios(catg_name, facility_types)
+    function get_catg_type_pf_ratios(type_name, catg_name, facility_types, pf_ratios) {
+        catg_array = get_catg_pf_ratios(catg_name, facility_types, pf_ratios)
         // search existing
         for (i in all_types) {
             if (type_name == all_types[i]) {
@@ -410,17 +413,14 @@
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
         type_name = $(e.target).text()
-        console.log('here')
         $a_child.text(type_name)
-        console.log('here')
         // update plot
         catg_name = $('li#catgs a.dropdown-toggle').text()
-        ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types)
-
-        console.log('here')
-        generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
-                        {'name': catg_name, 'data': ct_pf_ratios[0]},
-                        {'name': type_name, 'data': ct_pf_ratios[1]})
+        ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types, pf_ratios)
+        console.log(ct_pf_ratios)
+        generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']},
+                         {'name': catg_name, 'data': ct_pf_ratios[0]},
+                         {'name': type_name, 'data': ct_pf_ratios[1]})
     });
     $('#catgs-dropdown li a').click(function(e) {
         // update breadcrumbs
@@ -446,14 +446,14 @@
                     var $a_child = $li_parent.children('a.dropdown-toggle');
                     type_name = $(e.target).text(); $a_child.text(type_name);
                     catg_name = $('li#catgs a.dropdown-toggle').text();
-                    ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types);
-                    generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, {'name': catg_name, 'data': ct_pf_ratios[0]}, {'name': type_name, 'data': ct_pf_ratios[1]});
+                    ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types, pf_ratios);
+                    generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']}, {'name': catg_name, 'data': ct_pf_ratios[0]}, {'name': type_name, 'data': ct_pf_ratios[1]});
                 });
                 break;
             }
         } 
         // update plot
-        catg_array = get_catg_pf_ratios(catg_name, facility_types)
+        catg_array = get_catg_pf_ratios(catg_name, facility_types, pf_ratios)
         generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                         {'name': catg_name, 'data': catg_array},
                         {'name': 'All types', 'data':  catg_array})
