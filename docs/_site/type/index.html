@@ -114,7 +114,9 @@
 </ul>
 <div id="pf_chart"></div>
 
-<p>Overall, it appears that the inspections do indeed reflect the food business landscape in Chicago, as there aren’t strong correlations with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. As such, the results and inspections frequencies seem to be well balanced!</p>
+<p>As we can observe, the probability of passing of failing an inspection is affected by the business type. However, this may simply reflect underlying factors. A mobile food vendor, for example, is likely to have fewer financial resources than a daycare or school owner (the main entities in the infant care category). As such, the later will definitely be able to invest more into ensuring proper kitchen and serving conditions.</p>
+
+<p>Finally, overall, it appears that the inspections do indeed reflect the food business landscape in Chicago, as there aren't strong correlations with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. As such, the results and inspections frequencies seem to be well balanced!</p>
 
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -393,13 +395,13 @@
     }
     for (i in facility_types) {
         $('#chartoptions li#catgs ul').append(
-            `<li><a tabindex="-1" href="#">`+facility_types[i]['title']+`</a></li>`);
+            `<li class="dropdown-item"><a tabindex="-1" href="#">`+facility_types[i]['title']+`</a></li>`);
     }
     $('#chartoptions li#types ul').append(
-        `<li><a tabindex="-1" href="#">All types</a></li>`);
+        `<li class="dropdown-item"><a tabindex="-1" href="#">All types</a></li>`);
     for (i in all_types) {
         $('#chartoptions li#types ul').append(
-            `<li><a tabindex="-1" href="#">`+all_types[i]+`</a></li>`);
+            `<li class="dropdown-item"><a tabindex="-1" href="#">`+all_types[i]+`</a></li>`);
     }
     $('#types-dropdown li a').click(function(e) {
         // update breadcrumbs
@@ -426,10 +428,10 @@
         // update types 
         for (i in facility_types) {
             if (catg_name == facility_types[i]['title']) {
-                $('#chartoptions li#types ul').html(`<li><a tabindex="-1" href="#">All types</a></li>`);
+                $('#chartoptions li#types ul').html(`<li class="dropdown-item"><a tabindex="-1" href="#">All types</a></li>`);
                 for (j in facility_types[i]['lst']) {
                     $('#chartoptions li#types ul').append(
-                        `<li><a tabindex="-1" href="#">` +
+                        `<li class="dropdown-item"><a tabindex="-1" href="#">` +
                         facility_types[i]['lst'][j] + `</a></li>`);
                 }
                 // update types dropdown and re-add event listeners
