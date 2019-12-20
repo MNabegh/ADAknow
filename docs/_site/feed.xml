@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T10:43:26+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;h1 id=&quot;we-are-where-we-eat&quot;&gt;We are where we eat&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T15:45:41+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;h1 id=&quot;we-are-where-we-eat&quot;&gt;We are where we eat&lt;/h1&gt;
 &lt;p&gt;We are shaped by what we eat. But we also shape where we eat. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play?&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -9,7 +9,9 @@
 
 &lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
 
-&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business reviews?</summary></entry><entry><title type="html">Time</title><link href="http://localhost:4000/ADAknow/time/" rel="alternate" type="text/html" title="Time" /><published>2019-12-04T00:00:00+01:00</published><updated>2019-12-04T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/time</id><content type="html" xml:base="http://localhost:4000/ADAknow/time/">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
+&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../images/corrPlotGoogleReviews.png&quot; alt=&quot;Correlation plot&quot; /&gt;&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business reviews?</summary></entry><entry><title type="html">Time</title><link href="http://localhost:4000/ADAknow/time/" rel="alternate" type="text/html" title="Time" /><published>2019-12-04T00:00:00+01:00</published><updated>2019-12-04T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/time</id><content type="html" xml:base="http://localhost:4000/ADAknow/time/">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
 
 &lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
 
@@ -27,26 +29,130 @@
 
 &lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
 
-&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business size?</summary></entry><entry><title type="html">Type</title><link href="http://localhost:4000/ADAknow/type/" rel="alternate" type="text/html" title="Type" /><published>2019-12-01T00:00:00+01:00</published><updated>2019-12-01T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/type</id><content type="html" xml:base="http://localhost:4000/ADAknow/type/">&lt;ul class=&quot;breadcrumb&quot; id=&quot;chartoptions&quot;&gt;
-  &lt;li&gt;All&lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
+&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business size?</summary></entry><entry><title type="html">Type</title><link href="http://localhost:4000/ADAknow/type/" rel="alternate" type="text/html" title="Type" /><published>2019-12-01T00:00:00+01:00</published><updated>2019-12-01T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/type</id><content type="html" xml:base="http://localhost:4000/ADAknow/type/">&lt;p&gt;The district of Chicago is full of different restaurants and catering businesses. These range from restaurants to bars to grocery stores to school cafeterias to hospitals to many others. However, these are not present at the same frequency. &lt;/p&gt;
+
+&lt;p style=&quot;position: relative;&quot;&gt;At a first look, it's impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. The bar chart bellow reflects the number of inspections per &lt;span class=&quot;bt_tooltip&quot; data-tip=&quot;The original dataset had more than 440 different facility types. This number was reduced to 43 through a autonomous grouping method - which would group non-representative categories into either the closest representative one, or instead into a (newly created) miscellaneous category.&quot;&gt;business type&lt;/span&gt;, for the 9 most common types (and a tenth type, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #765145; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;other types&lt;/span&gt; representing the remaining 34 categories).&lt;/p&gt;
+&lt;p&gt;&lt;!--background: #e0e0e0;--&gt;&lt;/p&gt;
+
+&lt;div id=&quot;visits_chart&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt; To ascertain whether these inspections favor a particular type of business, we can examine the ratios of their inspection results. An inspection results in one of seven possible outputs: &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #B8BD79; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;Pass&lt;/span&gt;, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: #404040; background: #FED18E; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;Pass with conditions&lt;/span&gt;, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #FF8C57; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;Fail&lt;/span&gt;, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #EF4F43; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;Not ready&lt;/span&gt;, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #373A29; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;No entry&lt;/span&gt;, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #991163; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;Out of business&lt;/span&gt;, &lt;span style=&quot;font-family: monospace;font-size: 0.9em; color: white; background: #69919F; border-radius: 10%; padding: 0.5% 0.75%;&quot;&gt;Business not located&lt;/span&gt;. You can explore these ratios yourself in the plot below.&lt;/p&gt;
+
+&lt;p style=&quot;position: relative;&quot;&gt;The plot has 3 bars, the top one with the global average accross all entries in the data, the second the average across one &lt;span class=&quot;ct_tooltip&quot; data-tip=&quot;From the 43 food-related business types, we create 9 non-mutually-exclusive categories, based on their area of business.&quot;&gt;category&lt;/span&gt;, and the third one the average results for any one of the 43 specific business types.&lt;/p&gt;
+
+&lt;ul class=&quot;breadcrumb&quot; id=&quot;chartoptions&quot;&gt;
+  &lt;li&gt;&lt;strong&gt;Chart options - &lt;/strong&gt;All&lt;span class=&quot;divider&quot; style=&quot;margin: 0 5px 0 10px&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
   &lt;li id=&quot;catgs&quot;&gt;
     &lt;a class=&quot;dropdown-toggle&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;All categories&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
     &lt;ul id=&quot;catgs-dropdown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;/ul&gt;
-    &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;
+    &lt;span class=&quot;divider&quot; style=&quot;margin: 0 5px 0 5px&quot;&gt;/&lt;/span&gt;
   &lt;/li&gt;
   &lt;li id=&quot;types&quot;&gt;
     &lt;a class=&quot;dropdown-toggle&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;All types&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
     &lt;ul id=&quot;types-dropdown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;pf_chart&quot;&gt;&lt;/div&gt;
 
-&lt;p&gt;It’s impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. However, the later case appears to be true, as there isn’t a strong correlation with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. Overall, the results and inspections frequencies seem to be well balanced!&lt;/p&gt;
+&lt;p&gt;Overall, it appears that the inspections do indeed reflect the food business landscape in Chicago, as there aren’t strong correlations with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. As such, the results and inspections frequencies seem to be well balanced!&lt;/p&gt;
 
 &lt;!-- JS --&gt;
 &lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot; integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
 &lt;script src=&quot;https://cdn.jsdelivr.net/npm/apexcharts&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    // visits = {
+    //     'bakery': [2905],
+    //     'banquet': [123],
+    //     'banquet hall': [187],
+    //     'cafeteria': [84],
+    //     'catering': [1208],
+    //     'charter school': [168],
+    //     &quot;children's services facility&quot;: [3152],
+    //     'coffee shop': [129],
+    //     'convenience': [65],
+    //     'convenience store': [83],
+    //     'daycare': [82],
+    //     'daycare (2 - 6 years)': [2688],
+    //     'daycare (2 years)': [53],
+    //     'daycare (under 2 years)': [249],
+    //     'daycare above and under 2 years': [2356],
+    //     'daycare combo 1586': [755],
+    //     'gas station': [213],
+    //     'golden diner': [565],
+    //     'grocery store': [25014],
+    //     'grocery/restaurant': [144],
+    //     'hospital': [551],
+    //     'kiosk': [107],
+    //     'liquor': [869],
+    //     'live poultry': [87],
+    //     'long term care': [1366],
+    //     'misc': [1134],
+    //     'mobile food dispenser': [826],
+    //     'mobile food preparer': [593],
+    //     'mobile frozen desserts vendor': [106],
+    //     'mobile prepared food vendor': [124],
+    //     'navy pier kiosk': [66],
+    //     'not available': [4778],
+    //     'private school': [108],
+    //     'restaurant': [130140],
+    //     'school': [12081],
+    //     'shared kitchen': [144],
+    //     'shared kitchen user (long term)': [181],
+    //     'shared kitchen user (short term)': [37],
+    //     'shelter': [161],
+    //     'special event': [216],
+    //     'stadium': [45],
+    //     'tavern': [337],
+    //     'wholesale': [547]
+    //     }
+    // 194827 - 130140 - 25014 - 12081 - 4778 - 3152 - 2905 -2688-2356-1366
+    visits = {
+        'bakery': 2905,
+        'children\'s services facility': 3152,
+        'daycare (2 - 6 years)': 2688,
+        'daycare above and under 2 years': 2356,
+        'grocery store': 25014,
+        'long term care': 1366,
+        'not available': 4778,
+        'restaurant': 130140,
+        'school': 12081,
+        'other types': 10347
+        }
+    vals = []
+    names = []
+    for (v in visits) {
+        names.push(v)
+        vals.push(visits[v])
+    }
+    var options = {
+        chart: {
+            type: 'donut',
+            height: 450,
+        },
+        series: vals,
+        labels: names,
+        legend: {
+            position: 'bottom',
+            horizontalAlign: 'left', 
+        },
+        tooltip: {
+                y: {
+                    formatter: function(val) {
+                    return val + &quot; total visits&quot;
+                }
+            }
+        },
+        colors: ['#3A0725', '#AF0F30', '#E45901', '#F7BA00', '#727D09', '#E3497E', '#E39E48', '#23D38A', '#DA56FB', '#775146']
+        // ['#43424A', '#A8CE3F', '#A6538C', '#DA3129', '#FDDC4C', '#62BDDB', '#0FDD00', '#B178CD', '#380D49', '#E63593', '#FB4918', '#1B1FDB', '#72FB81', '#F2486F', '#1E1B5A', '#269F29', '#0D0D4B', '#91F7ED', '#2CF501', '#E948F0', '#5C297E', '#A2A510', '#8617ED', '#8EF1B9', '#06A3D4', '#D69FF0', '#251A88', '#64AFCF', '#08B204', '#C40F43', '#AE2D2E', '#57C6E2', '#F87C56', '#E6985B', '#AE232B', '#EF512D', '#98E459', '#D64D34', '#4F2E9A', '#9C2408', '#E07599', '#9DB4ED', '#B8BD1D', '#BE4806', '#FBEA75', '#DBE13A', '#B4D932', '#7CD73B', '#E04B64', '#11F519', '#8B96D4', '#71ACC1', '#49CA3C', '#FF7DA0', '#279509', '#3E4FA6']
+    }
+    var chart = new ApexCharts(
+        document.querySelector(&quot;#visits_chart&quot;),
+        options
+    );
+    chart.render();
+&lt;/script&gt;
 
 &lt;script&gt;
     function generate_plot(top, middle, bottom) {
@@ -61,7 +167,6 @@
                 bar: {
                     horizontal: true,
                 },
-                
             },
             stroke: {
                 width: 1,
@@ -93,9 +198,10 @@
                 text: 'Average inspection results per category and type of business'
             },
             xaxis: {
-                categories: [top['name'], middle['name'], bottom['name']],
+                categories: [top['name'] + ' businesses', 
+                             middle['name'] + (middle['name'] == 'All categories' ? '' : ' category'), 
+                             bottom['name'] + (bottom['name'] == 'All types' ? '' : '-type businesses')],
             },
-            
             tooltip: {
                     y: {
                         formatter: function(val) {
@@ -104,23 +210,21 @@
                 }
             },
             fill: {
-                opacity: 1
-                
+                opacity: 1   
             },
-            
             legend: {
                 position: 'top',
                 horizontalAlign: 'left',
                 offsetX: 40
-            }
+            },
+            colors: ['#B8BD79', '#FED18E', '#FF8C57', '#EF4F43', '#373A29', '#991163', '#69919F']
+            // ['#6F6456', '#CDDC49', '#CB7E94', '#E94B30', '#FEE659', '#A1CFDD']
         }
-
-        $('div#chart').html('')
+        $('div#pf_chart').html('')
         var chart = new ApexCharts(
-            document.querySelector(&quot;#chart&quot;),
+            document.querySelector(&quot;#pf_chart&quot;),
             options
         );
-        
         chart.render();
     }
     function get_catg_pf_ratios(catg_name, facility_types) {
@@ -144,8 +248,6 @@
         // otherwise, 'all types' selected
         return [catg_array, catg_array]
     }
-
-
     var facility_types = [
         {
             'title': 'All categories',
@@ -216,7 +318,6 @@
         'school', 'shared kitchen', 'shared kitchen user (long term)',
         'shared kitchen user (short term)', 'shelter', 'special event',
         'stadium', 'tavern', 'wholesale']
-
     // Order:
         // Business Not Located     
         // Fail                    
@@ -286,12 +387,10 @@
             'uncommon_facilities': [0.0, 0.1038135593220339, 0.013922518159806295, 0.017100484261501212, 0.6060835351089588, 0.20021186440677965, 0.036168280871670705]
         }
     }
-
     for (i in facility_types) {
         $('#chartoptions li#catgs ul').append(
             `&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;`+facility_types[i]['title']+`&lt;/a&gt;&lt;/li&gt;`);
     }
-
     $('#chartoptions li#types ul').append(
         `&lt;li&gt;&lt;a tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;All types&lt;/a&gt;&lt;/li&gt;`);
     for (i in all_types) {
@@ -304,10 +403,8 @@
         e.preventDefault();
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
-
         type_name = $(e.target).text()
         $a_child.text(type_name)
-
         // update plot
         catg_name = $('li#catgs a.dropdown-toggle').text()
         ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types)
@@ -320,10 +417,8 @@
         e.preventDefault();
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
-
         catg_name = $(e.target).text()
         $a_child.text(catg_name)
-
         // update types 
         for (i in facility_types) {
             if (catg_name == facility_types[i]['title']) {
@@ -353,7 +448,6 @@
                         {'name': catg_name, 'data': catg_array},
                         {'name': 'All types', 'data':  catg_array})
     });
-
     generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                   {'name': 'All categories', 'data': pf_ratios['all']['all']},
                   {'name': 'All types', 'data': pf_ratios['all']['all']})

@@ -68,6 +68,39 @@ span.emphasis {
     margin-right: auto;
   }
 }
+span.bt_tooltip::before, span.ct_tooltip::before {
+  content: attr(data-tip);
+  font-size: 12px;
+  position: absolute;
+  z-index: 999;
+  bottom: 9999px;
+  left: 55%;
+  top: -70%;
+  background: #404040;
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 24px;
+  height: fit-content;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+span.bt_tooltip:hover::before, span.ct_tooltip:hover::before {
+  opacity: 1;
+  bottom: -35px;
+}
+
+span.bt_tooltip, span.ct_tooltip {
+  border-bottom: 2px dotted #404040;
+}
+
+span.ct_tooltip::before {
+  left: 43%;
+  top: -10%;
+  max-width: 45%;
+}
+
 #chartoptions li a {
   margin: 0 5px;
 }
