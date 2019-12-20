@@ -1,11 +1,14 @@
 # We are where we eat
 
 # Abstract
-We are shaped by what we eat. But we also shape where we eat.  In this project, we investigate the food scene in Chicago. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play? 
+We are shaped by what we eat. But we are also shaped by where we eat.  In this project, we investigate the food scene in Chicago. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play? 
 
 We propose taking a structured look at Chicago’s food inspection scene and everything happening behind the curtain – starting with food violations and usual risk, progressing beyond year seasons and temperatures, reaching all the way down to location and block-level wealth and ethnicity.
 
 In order to achieve this, we will dive into the Chicago Food Inspection as well as the Wealth Distribution Dataset from the Chicago City Data Portal, the Voting Age Census for Ethnicities from the US government website, and the Google Reviews dataset.
+
+# Website
+You can find the data story for this analysis [here](http://obiwit.com/ADAknow/).
 
 # Research questions
 We've brought forward 3 big research questions we want to tackle on. We've also divided them into sub-questions, representing distinct chunks of analysis efforts:
