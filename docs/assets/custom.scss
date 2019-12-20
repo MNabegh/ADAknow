@@ -110,3 +110,16 @@ span.ct_tooltip::before {
 #chartoptions li ul li a {
   color: black;
 }
+
+@media (min-width: 1400px) {
+  // - relocate sidebar
+  .sticky-container{
+    right: 5%;
+  }
+}
+@media (min-width: 1500px) {
+  // - expand container width
+  .container {
+    max-width: 940px;
+  }
+}
