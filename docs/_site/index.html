@@ -199,15 +199,16 @@
         },
         colors: ['#3A0725', '#AF0F30', '#E45901', '#F7BA00', '#727D09', '#E3497E', '#E39E48', '#23D38A', '#DA56FB', '#775146']
     }
-    var chart = new ApexCharts(
+    var visits_chart = new ApexCharts(
         document.querySelector("#visits_chart"),
         options
     );
-    chart.render();
+    visits_chart.render();
 </script>
 
 <script>
-    function generate_plot(top, middle, bottom) {
+    function generate_pf_plot(top, middle, bottom) {
+        console.log('tesst')
         var options = {
             chart: {
                 height: 350,
@@ -272,11 +273,11 @@
             colors: ['#B8BD79', '#FED18E', '#FF8C57', '#EF4F43', '#373A29', '#991163', '#69919F']
         }
         $('div#pf_chart').html('')
-        var chart = new ApexCharts(
+        var pf_chart = new ApexCharts(
             document.querySelector("#pf_chart"),
             options
         );
-        chart.render();
+        pf_chart.render();
     }
     function get_catg_pf_ratios(catg_name, facility_types) {
         // search existing
@@ -442,15 +443,18 @@
     }
     $('#types-dropdown li a').click(function(e) {
         // update breadcrumbs
-        console.log('a')
         e.preventDefault();
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
         type_name = $(e.target).text()
+        console.log('here')
         $a_child.text(type_name)
+        console.log('here')
         // update plot
         catg_name = $('li#catgs a.dropdown-toggle').text()
         ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types)
+
+        console.log('here')
         generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                         {'name': catg_name, 'data': ct_pf_ratios[0]},
                         {'name': type_name, 'data': ct_pf_ratios[1]})
@@ -487,13 +491,13 @@
         } 
         // update plot
         catg_array = get_catg_pf_ratios(catg_name, facility_types)
-        generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
+        generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                         {'name': catg_name, 'data': catg_array},
                         {'name': 'All types', 'data':  catg_array})
     });
-    generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
-                  {'name': 'All categories', 'data': pf_ratios['all']['all']},
-                  {'name': 'All types', 'data': pf_ratios['all']['all']})
+    generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
+                     {'name': 'All categories', 'data': pf_ratios['all']['all']},
+                     {'name': 'All types', 'data': pf_ratios['all']['all']})
 </script>
 
 </div>
@@ -552,7 +556,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 <p>
 	For mere curiosity, or deeper insight, the following plots displays the distribution of violations for each of the ethnicity present in our dataset.
 </p>
-<div class="dropdown" style="padding-left: 10%;">
+<div class="dropdown" id="eth_maps" style="padding-left: 10%;">
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dedede;">Change plot type  
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -573,7 +577,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <!-- JS -->
 <script>
-    $('div.dropdown div a').click(function(e) {
+    $('div#eth_maps div a').click(function(e) {
         e.preventDefault();
         $('div.plotly-graph-div').hide()
         console.log($(e.target))
@@ -677,8 +681,7 @@ On the map below, the radius of the different bubbles is directly proportional t
            <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
         </a>
       </h2>
-      <div id="Time" class="collapse show"><p>People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.
-<!-- you should be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect. --></p>
+      <div id="Time" class="collapse show"><p>People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.</p>
 
 <div class="column">
     <div class="wrapperDoughnut" id="cherry"></div>

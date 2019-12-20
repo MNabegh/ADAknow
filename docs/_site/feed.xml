@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T21:41:14+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;!-- &lt;img src=&quot;/ADAknow/images/chicago.jpg&quot; style=&quot;position: absolute; opacity: 0.2; left: 0; z-index: -1; top: 110px; height: 600px;&quot;/&gt; --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T21:58:16+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;!-- &lt;img src=&quot;/ADAknow/images/chicago.jpg&quot; style=&quot;position: absolute; opacity: 0.2; left: 0; z-index: -1; top: 110px; height: 600px;&quot;/&gt; --&gt;
 
 &lt;h1 id=&quot;we-are-where-we-eat&quot;&gt;We are where we eat&lt;/h1&gt;
 &lt;p&gt;We are shaped by what we eat. But we are also shaped by where we eat. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play?&lt;/p&gt;
@@ -27,8 +27,7 @@
 
 &lt;p&gt;Then, we can say the number rating of a businesses on Google does not seem to be correlated with the number of failed/passed inpspections. Does this mean that users do not really care about the health conditions of a businesses where they go? Probably they do not have the chance to go behind the scene and therefore they cannot know the true conditions of the businesses.&lt;/p&gt;
 
-&lt;p&gt;In this analysis, we do need to highlight that the number of overlapping businesses between the Google dataset and Health Inspection is small (~1600), whith a heavy-tailed distribution on the number of reviews. Therefore, we deduce that a dataset of reviews with more up-to-date reviews and more businneses in both datasets could yield different resutls.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business reviews?</summary></entry><entry><title type="html">Time</title><link href="http://localhost:4000/ADAknow/time/" rel="alternate" type="text/html" title="Time" /><published>2019-12-04T00:00:00+01:00</published><updated>2019-12-04T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/time</id><content type="html" xml:base="http://localhost:4000/ADAknow/time/">&lt;p&gt;People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.
-&lt;!-- you should be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect. --&gt;&lt;/p&gt;
+&lt;p&gt;In this analysis, we do need to highlight that the number of overlapping businesses between the Google dataset and Health Inspection is small (~1600), whith a heavy-tailed distribution on the number of reviews. Therefore, we deduce that a dataset of reviews with more up-to-date reviews and more businneses in both datasets could yield different resutls.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business reviews?</summary></entry><entry><title type="html">Time</title><link href="http://localhost:4000/ADAknow/time/" rel="alternate" type="text/html" title="Time" /><published>2019-12-04T00:00:00+01:00</published><updated>2019-12-04T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/time</id><content type="html" xml:base="http://localhost:4000/ADAknow/time/">&lt;p&gt;People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.&lt;/p&gt;
 
 &lt;div class=&quot;column&quot;&gt;
     &lt;div class=&quot;wrapperDoughnut&quot; id=&quot;cherry&quot;&gt;&lt;/div&gt;
@@ -400,7 +399,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 &lt;p&gt;
 	For mere curiosity, or deeper insight, the following plots displays the distribution of violations for each of the ethnicity present in our dataset.
 &lt;/p&gt;
-&lt;div class=&quot;dropdown&quot; style=&quot;padding-left: 10%;&quot;&gt;
+&lt;div class=&quot;dropdown&quot; id=&quot;eth_maps&quot; style=&quot;padding-left: 10%;&quot;&gt;
   &lt;button class=&quot;btn btn-light dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; style=&quot;background: #dedede;&quot;&gt;Change plot type  
   &lt;/button&gt;
   &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuButton&quot;&gt;
@@ -421,7 +420,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 &lt;!-- JS --&gt;
 &lt;script&gt;
-    $('div.dropdown div a').click(function(e) {
+    $('div#eth_maps div a').click(function(e) {
         e.preventDefault();
         $('div.plotly-graph-div').hide()
         console.log($(e.target))
@@ -536,15 +535,16 @@ On the map below, the radius of the different bubbles is directly proportional t
         },
         colors: ['#3A0725', '#AF0F30', '#E45901', '#F7BA00', '#727D09', '#E3497E', '#E39E48', '#23D38A', '#DA56FB', '#775146']
     }
-    var chart = new ApexCharts(
+    var visits_chart = new ApexCharts(
         document.querySelector(&quot;#visits_chart&quot;),
         options
     );
-    chart.render();
+    visits_chart.render();
 &lt;/script&gt;
 
 &lt;script&gt;
-    function generate_plot(top, middle, bottom) {
+    function generate_pf_plot(top, middle, bottom) {
+        console.log('tesst')
         var options = {
             chart: {
                 height: 350,
@@ -609,11 +609,11 @@ On the map below, the radius of the different bubbles is directly proportional t
             colors: ['#B8BD79', '#FED18E', '#FF8C57', '#EF4F43', '#373A29', '#991163', '#69919F']
         }
         $('div#pf_chart').html('')
-        var chart = new ApexCharts(
+        var pf_chart = new ApexCharts(
             document.querySelector(&quot;#pf_chart&quot;),
             options
         );
-        chart.render();
+        pf_chart.render();
     }
     function get_catg_pf_ratios(catg_name, facility_types) {
         // search existing
@@ -779,15 +779,18 @@ On the map below, the radius of the different bubbles is directly proportional t
     }
     $('#types-dropdown li a').click(function(e) {
         // update breadcrumbs
-        console.log('a')
         e.preventDefault();
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
         type_name = $(e.target).text()
+        console.log('here')
         $a_child.text(type_name)
+        console.log('here')
         // update plot
         catg_name = $('li#catgs a.dropdown-toggle').text()
         ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types)
+
+        console.log('here')
         generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                         {'name': catg_name, 'data': ct_pf_ratios[0]},
                         {'name': type_name, 'data': ct_pf_ratios[1]})
@@ -824,11 +827,11 @@ On the map below, the radius of the different bubbles is directly proportional t
         } 
         // update plot
         catg_array = get_catg_pf_ratios(catg_name, facility_types)
-        generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
+        generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                         {'name': catg_name, 'data': catg_array},
                         {'name': 'All types', 'data':  catg_array})
     });
-    generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
-                  {'name': 'All categories', 'data': pf_ratios['all']['all']},
-                  {'name': 'All types', 'data': pf_ratios['all']['all']})
+    generate_pf_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
+                     {'name': 'All categories', 'data': pf_ratios['all']['all']},
+                     {'name': 'All types', 'data': pf_ratios['all']['all']})
 &lt;/script&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business type?</summary></entry></feed>
