@@ -31,7 +31,6 @@ span.emphasis {
   transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
-
 .sticky li a {
   color: black;
 }
@@ -39,7 +38,6 @@ span.emphasis {
 .sticky li:hover {
   margin-left: -15px;
 }
-
 .sticky li:hover a {
   color: teal;
 }
@@ -49,31 +47,28 @@ span.emphasis {
     margin-left: 70px;
   }
 }
-
 @media (max-width: 1030px) {
   .sticky-container {
     right: 10px;
     width: 170px;
   }
 }
-
 @media (max-width: 970px) {
   div#main {
     margin-left: 30px;
   }
 }
-
 @media (max-width: 920px) {
   .sticky-container {
     display: none;
   }
+
   div#main {
     margin-left: auto;
     margin-right: auto;
   }
 }
-
-span.bt_tooltip::before, span.ct_tooltip::before {
+span.it_tooltip::before, span.bt_tooltip::before, span.ct_tooltip::before {
   content: attr(data-tip);
   font-size: 12px;
   position: absolute;
@@ -91,12 +86,12 @@ span.bt_tooltip::before, span.ct_tooltip::before {
   transition: opacity 0.4s ease-out;
 }
 
-span.bt_tooltip:hover::before, span.ct_tooltip:hover::before {
+span.it_tooltip:hover::before, span.bt_tooltip:hover::before, span.ct_tooltip:hover::before {
   opacity: 1;
   bottom: -35px;
 }
 
-span.bt_tooltip, span.ct_tooltip {
+span.it_tooltip, span.bt_tooltip, span.ct_tooltip {
   border-bottom: 2px dotted #404040;
 }
 
@@ -104,6 +99,12 @@ span.ct_tooltip::before {
   left: 43%;
   top: -10%;
   max-width: 45%;
+}
+
+span.it_tooltip::before {
+  max-width: 65%;
+  left: 40%;
+  top: 30%;
 }
 
 #chartoptions li a {
@@ -125,11 +126,8 @@ span.ct_tooltip::before {
     right: 5%;
   }
 }
-
 @media (min-width: 1500px) {
   .container {
     max-width: 940px;
   }
 }
-
-/*# sourceMappingURL=custom.css.map */

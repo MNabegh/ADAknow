@@ -55,7 +55,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 <p>
 	For mere curiosity, or deeper insight, the following plots displays the distribution of violations for each of the ethnicity present in our dataset.
 </p>
-<div class="dropdown" style="padding-left: 10%;">
+<div class="dropdown" id="eth_maps" style="padding-left: 10%;">
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dedede;">Change plot type  
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -75,7 +75,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <!-- JS -->
 <script>
-    $('div.dropdown div a').click(function(e) {
+    $('div#eth_maps div a').click(function(e) {
         e.preventDefault();
         $('div.plotly-graph-div').hide()
         console.log($(e.target))
