@@ -126,8 +126,7 @@
             plotOptions: {
                 bar: {
                     horizontal: true,
-                },
-                
+                },                
             },
             stroke: {
                 width: 1,
@@ -160,8 +159,7 @@
             },
             xaxis: {
                 categories: [top['name'], middle['name'], bottom['name']],
-            },
-            
+            },            
             tooltip: {
                     y: {
                         formatter: function(val) {
@@ -170,23 +168,19 @@
                 }
             },
             fill: {
-                opacity: 1
-                
-            },
-            
+                opacity: 1                
+            },            
             legend: {
                 position: 'top',
                 horizontalAlign: 'left',
                 offsetX: 40
             }
         }
-
         $('div#chart').html('')
         var chart = new ApexCharts(
             document.querySelector("#chart"),
             options
-        );
-        
+        );        
         chart.render();
     }
     function get_catg_pf_ratios(catg_name, facility_types) {
@@ -210,8 +204,6 @@
         // otherwise, 'all types' selected
         return [catg_array, catg_array]
     }
-
-
     var facility_types = [
         {
             'title': 'All categories',
@@ -282,7 +274,6 @@
         'school', 'shared kitchen', 'shared kitchen user (long term)',
         'shared kitchen user (short term)', 'shelter', 'special event',
         'stadium', 'tavern', 'wholesale']
-
     // Order:
         // Business Not Located     
         // Fail                    
@@ -352,12 +343,10 @@
             'uncommon_facilities': [0.0, 0.1038135593220339, 0.013922518159806295, 0.017100484261501212, 0.6060835351089588, 0.20021186440677965, 0.036168280871670705]
         }
     }
-
     for (i in facility_types) {
         $('#chartoptions li#catgs ul').append(
             `<li><a tabindex="-1" href="#">`+facility_types[i]['title']+`</a></li>`);
     }
-
     $('#chartoptions li#types ul').append(
         `<li><a tabindex="-1" href="#">All types</a></li>`);
     for (i in all_types) {
@@ -370,10 +359,8 @@
         e.preventDefault();
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
-
         type_name = $(e.target).text()
         $a_child.text(type_name)
-
         // update plot
         catg_name = $('li#catgs a.dropdown-toggle').text()
         ct_pf_ratios = get_catg_type_pf_ratios(type_name, catg_name, facility_types)
@@ -386,10 +373,8 @@
         e.preventDefault();
         var $li_parent = $(e.target).parent().parent().parent()
         var $a_child = $li_parent.children('a.dropdown-toggle')
-
         catg_name = $(e.target).text()
         $a_child.text(catg_name)
-
         // update types 
         for (i in facility_types) {
             if (catg_name == facility_types[i]['title']) {
@@ -419,7 +404,6 @@
                         {'name': catg_name, 'data': catg_array},
                         {'name': 'All types', 'data':  catg_array})
     });
-
     generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                   {'name': 'All categories', 'data': pf_ratios['all']['all']},
                   {'name': 'All types', 'data': pf_ratios['all']['all']})

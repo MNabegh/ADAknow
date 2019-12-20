@@ -1,0 +1,219 @@
+I"™<p>Peopleâ€™s lifestyle and needs changes with the year passing, so we investigate what should you be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect.</p>
+
+<div class="column">
+<div class="wrapperDoughnut" id="cherry"></div>
+</div>
+
+<div class="column">
+<div class="wrapperDoughnut" id="car"></div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    function generate_plot() {
+      var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        position: 'top', // top, center, bottom
+                    },
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + "%";
+                },
+                offsetY: -20,
+                style: {
+                    fontSize: '12px',
+                    colors: ["#304758"]
+                }
+            },
+            series: [{
+                name: 'Inflation',
+                data: [0.2, 0.2, 0.16, 0.2, 0.19, 0.2, 0.2, 0.2, 0.19, 0.18, 0.19, 0.2] * 100
+            }],
+            xaxis: {
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                position: 'top',
+                labels: {
+                    offsetY: -18,
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                crosshairs: {
+                    fill: {
+                        type: 'gradient',
+                        gradient: {
+                            colorFrom: '#D8E3F0',
+                            colorTo: '#BED1E6',
+                            stops: [0, 100],
+                            opacityFrom: 0.4,
+                            opacityTo: 0.5,
+                        }
+                    }
+                },
+                tooltip: {
+                    enabled: true,
+                    offsetY: -35,
+                }
+            },
+            fill: {
+                gradient: {
+                    shade: 'light',
+                    type: "horizontal",
+                    shadeIntensity: 0.25,
+                    gradientToColors: undefined,
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [50, 0, 100, 100]
+                },
+            },
+            yaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false,
+                },
+                labels: {
+                    show: false,
+                    formatter: function (val) {
+                        return val + "%";
+                    }
+                }
+            },
+            title: {
+                text: 'Monthly Inflation in Argentina, 2002',
+                floating: true,
+                offsetY: 320,
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(
+            document.querySelector("#cherry"),
+            options
+        );
+        chart.render();
+    }
+        function plot_temp() {
+            var options = {
+                    chart: {
+                        height: 350,
+                        type: 'bar',
+                    },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                position: 'top', // top, center, bottom
+                            },
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function (val) {
+                            return val + "%";
+                        },
+                        offsetY: -20,
+                        style: {
+                            fontSize: '12px',
+                            colors: ["#304758"]
+                        }
+                    },
+                    series: [{
+                        name: 'Inflation',
+                        data: [58.71999999999999, 82.91999999999999, 36.75555555555556, 34.43, 30.72, 85.0, 80.41, 46.839999999999996, 70.94, 47.61, 62.94000000000001, 75.93]
+                    }],
+                    xaxis: {
+                        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                        position: 'top',
+                        labels: {
+                            offsetY: -18,
+                        },
+                        axisBorder: {
+                            show: false
+                        },
+                        axisTicks: {
+                            show: false
+                        },
+                        crosshairs: {
+                            fill: {
+                                type: 'gradient',
+                                gradient: {
+                                    colorFrom: '#D8E3F0',
+                                    colorTo: '#BED1E6',
+                                    stops: [0, 100],
+                                    opacityFrom: 0.4,
+                                    opacityTo: 0.5,
+                                }
+                            }
+                        },
+                        tooltip: {
+                            enabled: true,
+                            offsetY: -35,
+                        }
+                    },
+                    fill: {
+                        gradient: {
+                            shade: 'light',
+                            type: "horizontal",
+                            shadeIntensity: 0.25,
+                            gradientToColors: undefined,
+                            inverseColors: true,
+                            opacityFrom: 1,
+                            opacityTo: 1,
+                            stops: [50, 0, 100, 100]
+                        },
+                    },
+                    yaxis: {
+                        axisBorder: {
+                            show: false
+                        },
+                        axisTicks: {
+                            show: false,
+                        },
+                        labels: {
+                            show: false,
+                            formatter: function (val) {
+                                return val + "%";
+                            }
+                        }
+                    },
+                    title: {
+                        text: 'Monthly Inflation in Argentina, 2002',
+                        floating: true,
+                        offsetY: 320,
+                        align: 'center',
+                        style: {
+                            color: '#444'
+                        }
+                    },
+                };
+                var chart = new ApexCharts(
+                    document.querySelector("#car"),
+                    options
+                );
+                chart.render();
+            }
+    generate_plot()
+    plot_temp()
+</script>
+
+:ET
