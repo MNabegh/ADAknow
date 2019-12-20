@@ -426,10 +426,11 @@ nav a {
   margin: 1.8em .8em;
   /*border-left: 2px solid $gray;*/
   padding: 0.1em 1em;
-  color: #666;
+  color: white;
   font-size: 22px;
   font-style: italic;
-  background-color: #ede1ff;
+  font-weight: lighter;
+  background-color: #040404c7;
 }
 
 .post .you-may-like {

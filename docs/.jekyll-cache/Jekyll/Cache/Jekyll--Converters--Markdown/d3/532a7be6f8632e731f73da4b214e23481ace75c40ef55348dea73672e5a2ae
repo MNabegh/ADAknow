@@ -1,20 +1,12 @@
----
-layout: post
-title: Type
-excerpt: What is the impact of <span class="emphasis">the business type</span>?
-small_excerpt: the business type?
----
+I"žQ<p>The district of Chicago is full of different restaurants and catering businesses. These range from restaurants to bars to grocery stores to school cafeterias to hospitals to many others. However, these are not present at the same frequency. </p>
 
-<p>The district of Chicago is full of different restaurants and catering businesses. These range from restaurants to bars to grocery stores to school cafeterias to hospitals to many others. However, these are not present at the same frequency. </p>
-
-<p style="position: relative;">At a first look, it's impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. The donut chart bellow reflects the number of inspections per <span class="bt_tooltip" data-tip="The original dataset had more than 440 different facility types. This number was reduced to 43 through a autonomous grouping method - which would group non-representative categories into either the closest representative one, or instead into a (newly created) miscellaneous category.">business type</span>, for the 9 most common types (and a tenth type, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #765145; border-radius: 10%; padding: 0.5% 0.75%;">other types</span> representing the remaining 34 categories).</p> 
+<p style="position: relative;">At a first look, it's impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. The donut chart bellow reflects the number of inspections per <span class="bt_tooltip" data-tip="The original dataset had more than 440 different facility types. This number was reduced to 43 through a autonomous grouping method - which would group non-representative categories into either the closest representative one, or instead into a (newly created) miscellaneous category.">business type</span>, for the 9 most common types (and a tenth type, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #765145; border-radius: 10%; padding: 0.5% 0.75%;">other types</span> representing the remaining 34 categories).</p>
 
 <div id="visits_chart"></div>
 
 <p> To ascertain whether these inspections favor a particular type of business, we can examine the ratios of their inspection results. An inspection results in one of seven possible outcomes: <span style="font-family: monospace;font-size: 0.9em; color: white; background: #B8BD79; border-radius: 10%; padding: 0.5% 0.75%;">Pass</span>, <span style="font-family: monospace;font-size: 0.9em; color: #404040; background: #FED18E; border-radius: 10%; padding: 0.5% 0.75%;">Pass with conditions</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #FF8C57; border-radius: 10%; padding: 0.5% 0.75%;">Fail</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #EF4F43; border-radius: 10%; padding: 0.5% 0.75%;">Not ready</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #373A29; border-radius: 10%; padding: 0.5% 0.75%;">No entry</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #991163; border-radius: 10%; padding: 0.5% 0.75%;">Out of business</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #69919F; border-radius: 10%; padding: 0.5% 0.75%;">Business not located</span>. You can explore these ratios yourself in the plot below.</p>
 
 <p style="position: relative;">The plot has 3 bars, the top one with the global average accross all entries in the data, the second the average across one <span class="ct_tooltip" data-tip="From the 43 food-related business types, we create 9 non-mutually-exclusive categories, based on their area of business.">category</span>, and the third one the average results for any one of the 43 specific business types.</p>
-
 
 <ul class="breadcrumb" id="chartoptions">
   <li><strong>Chart options - </strong>All<span class="divider" style="margin: 0 5px 0 10px">/</span></li>
@@ -34,11 +26,11 @@ small_excerpt: the business type?
 
 <p>Finally, overall, it appears that the inspections do indeed reflect the food business landscape in Chicago, as there aren't strong correlations with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. As such, the results and inspections frequencies seem to be well balanced!</p>
 
-
-
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 <script>
     visits = {
         'bakery': 2905,
@@ -84,6 +76,7 @@ small_excerpt: the business type?
     );
     chart.render();
 </script>
+
 <script>
     function generate_plot(top, middle, bottom) {
         var options = {
@@ -373,3 +366,5 @@ small_excerpt: the business type?
                   {'name': 'All categories', 'data': pf_ratios['all']['all']},
                   {'name': 'All types', 'data': pf_ratios['all']['all']})
 </script>
+
+:ET

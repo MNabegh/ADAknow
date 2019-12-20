@@ -68,16 +68,59 @@ span.emphasis {
   }
 }
 
-
+// Tooltips
+span.bt_tooltip::before, span.ct_tooltip::before {
+  content: attr(data-tip) ;     
+  font-size: 12px;
+  position:absolute;
+  z-index: 999;
+  bottom:9999px;
+  left: 55%;
+  top: -70%;
+  background:#404040;
+  color:#e0e0e0;
+  padding:10px;
+  border-radius: 5px;
+  line-height: 24px;
+  height: fit-content;
+  opacity: 0;  
+  transition:opacity 0.4s ease-out; 
+}
+span.bt_tooltip:hover::before, span.ct_tooltip:hover::before {
+  opacity: 1;
+  bottom:-35px;
+}
+span.bt_tooltip, span.ct_tooltip {
+  border-bottom: 2px dotted #404040;
+}
+span.ct_tooltip::before {
+  left: 43%; 
+  top: -10%; 
+  max-width: 45%;
+}
 
 #chartoptions li a {
   margin: 0 5px;
 }
 #chartoptions li#types ul {
-  height:300px;
   overflow-y:auto;
+  height: fit-content;
+  max-height: 300px;
   // TODO - show little arrow at bottom, just screaming 'scroll me'
 }
 #chartoptions li ul li a {
   color: black;
+}
+
+@media (min-width: 1400px) {
+  // relocate sidebar
+  .sticky-container{
+    right: 5%;
+  }
+}
+@media (min-width: 1500px) {
+  // expand container width
+  .container {
+    max-width: 940px;
+  }
 }
