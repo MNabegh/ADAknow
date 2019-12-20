@@ -37,7 +37,7 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <b>Settling in Coloured Neighbourhoods</b>
 <p>
-	From the data we have collected so far, it seems like moving to a neighbourhood that is not primarily white will either increase your chances of being inspected or lower your chances of being found on Google Local (Google Maps). 
+	From the data we have collected so far, it seems like moving to a neighbourhood that is not primarily white will either increase your chances of being inspected or lower your chances of being found on Google Local (Google Maps), which has been collected <a href="http://cseweb.ucsd.edu/~jmcauley/datasets.html">here</a> 
 	<br><i>
 	So why should you settle into those areas? </i>
 	<br>
