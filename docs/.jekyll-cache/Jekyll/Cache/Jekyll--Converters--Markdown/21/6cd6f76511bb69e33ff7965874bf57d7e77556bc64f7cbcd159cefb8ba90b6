@@ -1,12 +1,4 @@
----
-layout: post
-title: Type
-excerpt: What is the impact of <span class="emphasis">the business type</span>?
-small_excerpt: the business type?
----
-
-
-<ul class="breadcrumb" id="chartoptions">
+I"�?<ul class="breadcrumb" id="chartoptions">
   <li>All<span class="divider">/</span></li>
   <li id="catgs">
     <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">All categories<b class="caret"></b></a>
@@ -20,12 +12,13 @@ small_excerpt: the business type?
 </ul>
 <div id="chart"></div>
 
-It's impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. However, the later case appears to be true, as there isn't a strong correlation with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. Overall, the results and inspections frequencies seem to be well balanced!
-
+<p>It’s impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. However, the later case appears to be true, as there isn’t a strong correlation with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. Overall, the results and inspections frequencies seem to be well balanced!</p>
 
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 <script>
     function generate_plot(top, middle, bottom) {
         var options = {
@@ -337,3 +330,5 @@ It's impossible to be certain on whether the difference in facilities inspection
                   {'name': 'All types', 'data': pf_ratios['all']['all']})
 
 </script>
+
+:ET

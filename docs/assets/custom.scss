@@ -70,6 +70,14 @@ span.emphasis {
 
 
 
-#chartoptions button {
-  margin-right: 20px;
+#chartoptions li a {
+  margin: 0 5px;
+}
+#chartoptions li#types ul {
+  height:300px;
+  overflow-y:auto;
+  // TODO - show little arrow at bottom, just screaming 'scroll me'
+}
+#chartoptions li ul li a {
+  color: black;
 }

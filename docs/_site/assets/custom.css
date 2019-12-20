@@ -73,8 +73,17 @@ span.emphasis {
   }
 }
 
-#chartoptions button {
-  margin-right: 20px;
+#chartoptions li a {
+  margin: 0 5px;
+}
+
+#chartoptions li#types ul {
+  height: 300px;
+  overflow-y: auto;
+}
+
+#chartoptions li ul li a {
+  color: black;
 }
 
 /*# sourceMappingURL=custom.css.map */
