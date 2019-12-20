@@ -6,7 +6,6 @@ small_excerpt: the neighborhood?
 ---
 
 
-<b>Chicago - A Multicultural City</b>
 <p>As a multicultural city, <a href='https://www.chicago.gov/city/en/about.html'>Chicago</a> is well known for the diversity of its neighbourhood, and the harmony reigning among all its citizens. It is thus only natural that we investigate the relationship between the dominating ethnicity of each neighbourhood and the food establishments disseminated all throughout Chicago.</p>
 <p>But are they uniformely disseminated over the whole city?
 <br>
@@ -23,10 +22,10 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <b>Inspections and Restaurants - Fair Distribution or Bias?</b>
 <p>
-	It is not surprising to find a majority of the restaurants located in white neighbourhoods, as most of Chicago is dominated by a mostly white population. 37 parts of Chicago are primarily white, 19 are mostly black and african american while 11 are principally latino or hispanic. The amount of inspections each establishments benefit from is also fairly equal accross the neighbourhoods dominated by different ethnicities.
+	It is not surprising to find a majority of the restaurants located in white neighbourhoods, as most of Chicago is dominated by a mostly white population. Out of the 67 parts of Chicago, 37 are primarily white, 19 are mostly black and african american, and 11 are principally latino or hispanic. The amount of inspections each establishments benefits from is also fairly even accross the neighbourhoods dominated by different ethnicities.
 </p>
 <p>
-	However, if we look into the google reviews and into the number of food establishments that has not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This either means that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on google reviews than restaurants located in other areas. Or this means that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
+	However, if we look into the google reviews and into the number of food establishments that have not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This can mean one of two things: that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on google reviews than restaurants located in other areas; or that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
 	<iframe src="{{ site.baseurl }}/plots/ratioEthnicity.html" style="width: 100%; height: 400px;"></iframe>
 
 </p>

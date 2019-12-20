@@ -81,6 +81,10 @@
       </li>
     
       <li>
+        <a href="#head_Reviews">the business reviews?</a>
+      </li>
+    
+      <li>
         <a href="#head_Neighborhood">the neighborhood?</a>
       </li>
     
@@ -90,10 +94,6 @@
     
       <li>
         <a href="#head_Time">the time of the year?</a>
-      </li>
-    
-      <li>
-        <a href="#head_Reviews">the business reviews?</a>
       </li>
     
   </ul>
@@ -504,14 +504,43 @@
       <hr>
     
       <h2>
+        <a style="color: inherit; font-weight: lighter;" data-toggle="collapse" href="#Reviews" 
+           aria-expanded="true" aria-controls="Reviews" id="head_Reviews">
+           What is the impact of <span class="emphasis">the business reviews</span>?
+           <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
+        </a>
+      </h2>
+      <div id="Reviews" class="collapse show"><p>Can the reviews posted on online services allow us to discover whether a businesses is failing or passing the inspections in Chicago? In this section, we are going to analyze if there is a relationship between the review rates on Google Local (Google Maps) and their corresponding inspections.</p>
+
+<p>We have merged the Heath Inspection with Google’s Local dataset, extracted from the  <a href="http://cseweb.ucsd.edu/~jmcauley/datasets.html">Recommender Systems Dataset</a> by Julian McAuley, professor at the University of California, San Diego. After filtering the data, obtaining only the reviews businesses in Chicago and merging them with our dataset, we obtain around 1600 unique businesses for which we have reviews.</p>
+
+<p>We then try to find relationships between the businesses average review rate and their probability of passing an inspections (calculated from the Health Inspection Dataset), as well as the number of reviews.</p>
+
+<p>To analyze the possible relationships, we study several correlations. All of them yield irrelevant correlations between the variables considered. The following table shows highest correlation (Spearman) obtained:</p>
+
+<iframe src="/ADAknow/images/spearmanCorr.html" style="width: 100%; height: 350px; frameborder='0'"></iframe>
+
+<p>In addition, we also inspect the variables visually. As expected, the variables do not seem to have a significant correlation. The following plot proves this point.</p>
+
+<iframe src="/ADAknow/images/dataStory_GoogleReviews.html" style="width: 100%; height: 500px;"></iframe>
+
+<p>Thus, we cannot find a connection between Google Local reviews and the posibility of passing or failing an inspection. Both visual inspection and numeric values have failed to find any relation.</p>
+
+<p>Then, we can say the number rating of a business on Google does not seem to be correlated with its number of failed/passed inpspections. Does this mean that users do not really care about the health conditions of a businesses where they go? Probably they do not have the chance to go behind the scene and therefore they cannot know the true conditions of the businesses.</p>
+
+<p>In this analysis, we do need to highlight that the number of overlapping businesses between the Google dataset and Health Inspection is small (~1600), with a heavy-tailed distribution on the number of reviews. Therefore, we deduce that a dataset of reviews with more up-to-date reviews and more businneses in both datasets could yield different results.</p>
+
+</div>
+      <hr>
+    
+      <h2>
         <a style="color: inherit; font-weight: lighter;" data-toggle="collapse" href="#Neighborhood" 
            aria-expanded="true" aria-controls="Neighborhood" id="head_Neighborhood">
            What is the impact of <span class="emphasis">the neighborhood</span>?
            <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
         </a>
       </h2>
-      <div id="Neighborhood" class="collapse show"><p><b>Chicago - A Multicultural City</b></p>
-<p>As a multicultural city, <a href="https://www.chicago.gov/city/en/about.html">Chicago</a> is well known for the diversity of its neighbourhood, and the harmony reigning among all its citizens. It is thus only natural that we investigate the relationship between the dominating ethnicity of each neighbourhood and the food establishments disseminated all throughout Chicago.</p>
+      <div id="Neighborhood" class="collapse show"><p>As a multicultural city, <a href="https://www.chicago.gov/city/en/about.html">Chicago</a> is well known for the diversity of its neighbourhood, and the harmony reigning among all its citizens. It is thus only natural that we investigate the relationship between the dominating ethnicity of each neighbourhood and the food establishments disseminated all throughout Chicago.</p>
 <p>But are they uniformely disseminated over the whole city?
 <br />
 On the map below, the radius of the different bubbles is directly proportional to the amount of restaurants in that zipcode region, normalised by the areas of each zip. Most restaurants are concentrated in the city centre, near the coast. Coincidentally, this also corresponds to the neighbourhoods where the population is primarily white. Because we broke down the city into zip code area, which are fairly large, the three predominant ethnicities were the following: 
@@ -525,10 +554,10 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <p><b>Inspections and Restaurants - Fair Distribution or Bias?</b></p>
 <p>
-	It is not surprising to find a majority of the restaurants located in white neighbourhoods, as most of Chicago is dominated by a mostly white population. 37 parts of Chicago are primarily white, 19 are mostly black and african american while 11 are principally latino or hispanic. The amount of inspections each establishments benefit from is also fairly equal accross the neighbourhoods dominated by different ethnicities.
+	It is not surprising to find a majority of the restaurants located in white neighbourhoods, as most of Chicago is dominated by a mostly white population. Out of the 67 parts of Chicago, 37 are primarily white, 19 are mostly black and african american, and 11 are principally latino or hispanic. The amount of inspections each establishments benefits from is also fairly even accross the neighbourhoods dominated by different ethnicities.
 </p>
 <p>
-	However, if we look into the google reviews and into the number of food establishments that has not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This either means that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on google reviews than restaurants located in other areas. Or this means that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
+	However, if we look into the google reviews and into the number of food establishments that have not been inspected against the total amount of restaurants per neighbourhoods, we can observe that this ratio is larger in white neighbourhoods than in coloured neighbourhoods. This can mean one of two things: that restaurants located in white neighbourhoods that have not been inspected are most likely to be found on google reviews than restaurants located in other areas; or that restaurants in Black and African American or Hispanic or Latino neighbourhoods are most likely to be inspected.
 	<iframe src="/ADAknow/plots/ratioEthnicity.html" style="width: 100%; height: 400px;"></iframe>
 
 </p>
@@ -632,25 +661,24 @@ On the map below, the radius of the different bubbles is directly proportional t
            <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
         </a>
       </h2>
-      <div id="Size" class="collapse show"><!-- <h2> What is the impact of <span class="">the business size</span>?</h2> -->
+      <div id="Size" class="collapse show"><p>When deciding which restaurant to go to, a good point to make the decision can be whether we know it or not, especially if we are abroad. And brands play a big role here. How different is eating in the multinational kind of restaurants from eating in independent restaurants? Let’s dig in.</p>
 
-<p>When deciding which restaurant to go, a good point to make the decision can be whether we know it or not, especilly we we are abroad. And brands play a big role here. How different is eating in such kind of restaurants from eating in independent restaurants? Let’s discover it.</p>
+<p>First of  all, we need to know which are the top chain businesses in our dataset of inspections in Chicago, by number of establishments. The following table shows the number of different establishments of the top chains in our dataset of Chicago. If the inspection are sampling businesses uniformly from all over Chicago, this can give us a good picture of Chicago’s chain business scene.</p>
 
-<p>First of  all, we need to know which are the top chain businesses in our dataset of inspections in Chicago by number of establishments. The following table shows the number of different establishments of the top chains in our dataset of Chicago. If the inspection are sampling businesses uniformly from all over Chicago, this can give us a good picture of Chicago’s chain business scence.</p>
+<iframe src="/ADAknow/images/tableTopChains.html" style="width: 100%; height: 430px; frameborder='0'"></iframe>
 
-<iframe src="/ADAknow/images/tableTopChains.html" style="width: 100%; height: 500px; frameborder='0'"></iframe>
-
-<p>From the table we can derive that Subway is the company with biggest number establishments in Chicago, followed by 7eleven and Starbucks. Which of these chains is your favorite?</p>
+<p>From the table we can derive that Subway is the company with biggest number establishments in Chicago, followed by 7eleven and Starbucks. 
+<!-- Which of these chains is your favorite?  --></p>
 
 <h3> McDonald's vs Burger King </h3>
 
-<p>Let’s take on the battlefield of hamburgers. The 2 best-known chains in this industry are: McDonald’s and Burger. Everyone has their preference when coming to them. But what happens when we analyze them from the point of view of their cleanliness conditions? A lot of times it is claimed that these businesses are not the best with regard to keeping their establishments correctly sanitized. Will there be a different between the two?</p>
+<p>Let’s take on the battlefield of hamburgers. The 2 best-known chains in this industry are: McDonald’s and Burger King. Everyone has their preference when coming to them. But what happens when we analyze them from the point of view of their cleanliness conditions? A lot of times it is claimed that these businesses are not the best with regard to keeping their establishments correctly sanitized. Will there be a different between the two?</p>
 
 <iframe src="/ADAknow/images/MC_vs_BG.html" style="width: 100%; height: 500px; frameborder='0'"></iframe>
 
 <p>The plot above shows the rate of Pass/Pass with Conditions/Fail inspections for all the restaurants in Chicago that belong to these 2 chains. In the plot we observe the level of cleanliness for McDonald’s and Burger is very similar. There is no siginificant difference between them. They both have the same percentage of failed inspections, while McDonald’s has a 7% more of passed inspections, exactly the increased percentage of “Pass with Conditions” inspections that Burger King has over McDonald’s. In general terms we can say they are vey similar.</p>
 
-<p>Thus, we can say that in Chicago there is not a big difference between going to McDonald’s and Burger King when considering their level of cleanliness.</p>
+<p>Thus, we can say that in Chicago there is not a big difference between going to McDonald’s or Burger King when considering their level of cleanliness.</p>
 
 <h3> Top Chains Inspections rates</h3>
 
@@ -658,17 +686,17 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <iframe src="/ADAknow/images/allTopChains.html" style="width: 100%; height: 500px; frameborder='0'"></iframe>
 
-<p>In the plot above, we show the percentage of failed and passed inspections for the top chains in Chicago. The plot is sorted by number of Failed inspections. We observe that “Citgo” and “Family Dollar”, gas station shops and a variety store chain respectively have the largest amount of of failed inspections. In fact, the number “Fail” + “Pass w/ Conditiions” is alarmingly close to 50% of their inspected stores.</p>
+<p>In the plot above, we show the percentage of failed and passed inspections for the top chains in Chicago. The plot is sorted by number of failed inspections. We observe that “Citgo” and “Family Dollar”, gas station shops and a variety store chain respectively have the largest amount of of failed inspections. In fact, the number “Fail” + “Pass w/ Conditiions” is alarmingly close to 50% of their inspected stores.</p>
 
 <h3> Independet businesses vs Chains</h3>
 
-<p>When we are in a new city, we need to make the decision whether to go into the unexplored wildenesses of eating in a new restaurant that we do not know or visiting a chain restaurant that is familiar to us. One could wonder if there is a big difference of inspections passing rate between the independent businesses and big chains.</p>
+<p>When we are in a new city, we need to make the decision whether to go into the unexplored wildenesses of eating in a new restaurant that we do not know or to visit a chain restaurant that is familiar to us. One could wonder if there is a big difference of inspections passing rate between the independent businesses and big chains.</p>
 
-<p>Let’s look at the difference passing inspection rates between independent businesses and chain businesses in Chicago. For this analysis, we need to establish what chain business is. The definition is unclear. Can we consider a businesses a chain when they have 2 estabishments? 3?. We decided to establish these threshold at 5 in order to consider a business a brand. Then we compare the Pass/Fail inspection rates between the group of independent businesses and chains.</p>
+<p>Let’s look at the difference passing inspection rates between independent businesses and chain businesses in Chicago. For this analysis, we need to establish what chain business is. The definition is unclear. Can we consider a businesses a chain when they have 2 estabishments? 3? We decided to establish this threshold at 5 in order to consider a business a brand. Then we compare the Pass/Fail inspection rates between the group of independent businesses and chains.</p>
 
 <iframe src="/ADAknow/images/independent_vs_chain.html" style="width: 100%; height: 500px; frameborder='0'"></iframe>
 
-<p>There is a slight difference in the number of “Failed” inspections, where independent businesses failed 4% more than inspections than chain businesses. However, the there does not seem to be a big difference between the two types. Therefore, we can not conclude that it is safer to go to indepndent businesses than it is to go to chain businesses.</p>
+<p>There is a slight difference in the number of “Failed” inspections, where independent businesses failed 4% more than inspections than chain businesses. However, the there does not seem to be a big difference between the two types. Therefore, we can not conclude that it is significantly safer to go to a chain business than to an independent one.</p>
 
 <p>Hurrah! We do not have to care about the cleaning conditions of independent businesses when we go to Chicago. Independent businesses and big chains have very similar conditions.</p>
 </div>
@@ -692,11 +720,13 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <p>As we can see, the temperature and the time of the year do not signficantly affect the percentage of failed inspections.</p>
 
-<p>However, a further look into the data shows us that multiple violations, especially those with codes 2 and 3 have a distribution that is highly skewed - with signficantly more occurences for high temperature, this presents a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example of that is the following plot.</p>
+<p>However, a further look into the data shows us that multiple violations, especially those with codes 2 and 3 have a distribution that is highly skewed - with signficantly more occurences for high temperature, this presents a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example is present in the histogram bellow.</p>
 
 <div class="column">
 <div class="wrapperDoughnut" id="timeline-chart"></div>
 </div>
+
+<p>As such, one can conclude, since the overall level of fails remains the same throughout the year, that every season and temperature comes with its own share of heightned problems! So you can continue eating out during the summer!</p>
 
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -970,36 +1000,6 @@ On the map below, the radius of the different bubbles is directly proportional t
     plot_temp()
     plot_hist()
 </script>
-
-</div>
-      <hr>
-    
-      <h2>
-        <a style="color: inherit; font-weight: lighter;" data-toggle="collapse" href="#Reviews" 
-           aria-expanded="true" aria-controls="Reviews" id="head_Reviews">
-           What is the impact of <span class="emphasis">the business reviews</span>?
-           <i class="fa fa-caret-down" aria-hidden="false" style="margin-left: 10%;"></i>
-        </a>
-      </h2>
-      <div id="Reviews" class="collapse show"><p>Can the reviews posted on online services allow us to discover whether a businesses is failing or passing the inspections in Chicago. In this section, we are going to anlyze if there is a relationship between the review rates on Google Local (Google Maps) and their corresponding inspections.</p>
-
-<p>We have merged the Heath Inspection with Google’s Local dataset, extracted from the  <a href="http://cseweb.ucsd.edu/~jmcauley/datasets.html">Recommender Systems Dataset</a> by Julian McAuley, professor at the University of California, San Diego. After filtering the data, obtaining only the reviews businesses in Chicago and merging them with our dataset, we obtain around 1600 unique businesses for which we have reviews.</p>
-
-<p>We then try to find relationships between the businesses average review rate and their probability of passing an inspections (calculated from the Health Inspection Dataset), as well as the number of reviews.</p>
-
-<p>To analyze the possible relationships, we several correlations. All of them yield to irrelevant correlations between the variables studied. The following table shows highest correlation (Spearman) obtained:</p>
-
-<iframe src="/ADAknow/images/spearmanCorr.html" style="width: 100%; height: 350px; frameborder='0'"></iframe>
-
-<p>In addition, we also inspect the variables visually. As expected, the variables do not seem to have a significant correlation. The following plot proves this point.</p>
-
-<iframe src="/ADAknow/images/dataStory_GoogleReviews.html" style="width: 100%; height: 500px;"></iframe>
-
-<p>Thus, we cannot find the connection between Google Local reviews and the posibility of passing or failing an inspection. Both visual inspection and numeric values have failed to find such connection.</p>
-
-<p>Then, we can say the number rating of a businesses on Google does not seem to be correlated with the number of failed/passed inpspections. Does this mean that users do not really care about the health conditions of a businesses where they go? Probably they do not have the chance to go behind the scene and therefore they cannot know the true conditions of the businesses.</p>
-
-<p>In this analysis, we do need to highlight that the number of overlapping businesses between the Google dataset and Health Inspection is small (~1600), whith a heavy-tailed distribution on the number of reviews. Therefore, we deduce that a dataset of reviews with more up-to-date reviews and more businneses in both datasets could yield different resutls.</p>
 
 </div>
       <hr>
