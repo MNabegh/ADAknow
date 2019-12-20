@@ -95,6 +95,140 @@
   <div class="entry">
     <!-- facility type + "macro" category -->
 
+<!-- multiply, for each macro cat; generate with js -->
+<!-- <div id="chartoptions"></div> -->
+<ul class="breadcrumb">
+  <li>
+    All
+    <span class="divider">/</span>
+  </li>
+  <li>
+    <a class="dropdown-toggle" id="catgs" role="button" data-toggle="dropdown" href="#">All categories <b class="caret"></b></a>
+    <ul id="branches-dropdown" class="dropdown-menu">
+        <li><a tabindex="-1" href="...8109a3a986c7">commissions - <code>8109a3a986c7</code></a></li>
+        <li><a tabindex="-1" href="...76d3a7022f9e">dashboard-integration - <code>76d3a7022f9e</code></a></li>
+        <li><a tabindex="-1" href="...4ee00eb42b72">default - <code>4ee00eb42b72</code></a></li>
+        <li><a tabindex="-1" href="...10755b086192">led-support - <code>10755b086192</code></a></li>
+        <li><a tabindex="-1" href="...298fa9e18508">stable - <code>298fa9e18508</code></a></li>
+        <li><a tabindex="-1" href="...990826c5d5df">xdm-customer-selection - <code>990826c5d5df</code></a></li>
+    </ul>
+    <span class="divider">/</span>
+  </li>
+  <li class="dropdown open">
+    <a class="dropdown-toggle" id="types" role="button" data-toggle="dropdown" href="#">All types <b class="caret"></b></a>
+    <ul id="branches-dropdown" class="dropdown-menu">
+        <li><a tabindex="-1" href="...8109a3a986c7">commissions - <code>8109a3a986c7</code></a></li>
+        <li><a tabindex="-1" href="...76d3a7022f9e">dashboard-integration - <code>76d3a7022f9e</code></a></li>
+        <li><a tabindex="-1" href="...4ee00eb42b72">default - <code>4ee00eb42b72</code></a></li>
+        <li><a tabindex="-1" href="...10755b086192">led-support - <code>10755b086192</code></a></li>
+        <li><a tabindex="-1" href="...298fa9e18508">stable - <code>298fa9e18508</code></a></li>
+        <li><a tabindex="-1" href="...990826c5d5df">xdm-customer-selection - <code>990826c5d5df</code></a></li>
+    </ul>
+    <span class="divider">/</span>
+  </li>
+  
+</ul>
+<div id="chart"></div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    // average (accross all)
+    // average (accross macro cat)
+    // type score
+    // do 3 bar stacked plot + dropdown/whatever to select category
+    var options = {
+    chart: {
+        type: 'line'
+    },
+    series: [{
+        name: 'sales',
+        data: [30,40,35,50,49,60,70,91,125]
+    }],
+    xaxis: {
+        categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
+    }
+    }
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+    chart.render();
+</script>
+
+<p>It’s impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. However, the later case appears to be true, as there isn’t a strong correlation with top or bottom facilities (passing- or failing-wise) and facilities with the least or most visits. Overall, the results and inspections frequencies seem to be well balanced!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+
+<p>Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.</p>
+
+<p>Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+var facility_types = [
+    {
+        'title': 'infant_care',
+        'lst': ['school', 'children\'s services facility', 'daycare (2 - 6 years)',
+               'daycare above and under 2 years', 'daycare combo 1586', 'charter school', 'daycare (under 2 years)', 'private school', 'daycare', 'daycare (2 years)']
+    },
+    {
+        'title': 'catering',
+        'lst': ['restaurant', 'bakery', 'catering', 'golden diner', 'tavern', 'banquet hall', 'grocery/restaurant', 'coffee shop', 'banquet', 'cafeteria']
+    },
+    {
+        'title': 'alcohol',
+        'lst': ['tavern', 'liquor']
+    },
+    {
+        'title': 'stores',
+        'lst': ['grocery store', 'bakery', 'wholesale', 'gas station', 'grocery/restaurant', 'kiosk', 'live poultry', 'convenience store', 'navy pier kiosk', 'convenience']
+    },
+    {
+        'title': 'special_events',
+        'lst': ['catering', 'misc', 'special event',  'banquet hall', 'shared kitchen user (long term)', 'charter school', 'banquet', 'stadium']
+    },
+    {
+        'title': 'adult_care',
+        'lst': ['long term care', 'daycare combo 1586', 'hospital', 'shelter']
+    },
+    {
+        'title': 'mobile_vendors',
+        'lst': ['mobile food dispenser', 'mobile food preparer', 'mobile prepared food vendor', 'mobile frozen desserts vendor']
+    },
+    {
+        'title': 'shared_facilities',
+        'lst': ['shared kitchen user (long term)', 'shared kitchen', 'shared kitchen user (short term)']
+    },
+    {
+        'title': 'uncommon_facilities',
+        'lst': ['not available', 'misc', 'shelter', 'shared kitchen', 'live poultry', 'navy pier kiosk', 'stadium', 'shared kitchen user (long term)', 'shared kitchen user (short term)']
+    }
+]
+// btn_types = ['btn-primary', 'btn-secondary', 'btn-success', 
+            //  'btn-info', 'btn-warning', 'btn-danger']
+btn_types = ['btn-light', 'btn-secondary', 'btn-dark']
+for (i in facility_types) {
+    console.log(facility_types[i]['lst'])
+
+    sub_facilities = ""
+    for (j in facility_types[i]['lst']) {
+        type = facility_types[i]['lst'][j]
+        sub_facilities += `<a class="dropdown-item" href="#`+type+`">`+type+`</a>`
+    }
+
+    // $('#chartoptions').append(
+    //     `<div class="btn-group">
+    //         <button type="button" class="btn ` + btn_types[i%btn_types.length] + ` dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    //             `+facility_types[i]['title']+`
+    //         </button>
+    //         <div class="dropdown-menu"> `+sub_facilities+` </div>
+    //     </div>`)
+
+}
+
+</script>
+
+
   </div>
 
   <div>
@@ -135,7 +269,6 @@
           </footer>
         </div>
       </div>
-      <span>Icons by <a href="https://icons8.com/">icons8</a>.</span>
     </div>
 
     
