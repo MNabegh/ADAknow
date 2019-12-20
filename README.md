@@ -9,6 +9,7 @@ In order to achieve this, we will dive into the Chicago Food Inspection as well 
 
 # Website
 You can find the data story for this analysis [here](http://obiwit.com/ADAknow/).
+In order to get the best out of this experience, we recommend you to open it on Google Chrome.
 
 # Research questions
 We've brought forward 3 big research questions we want to tackle on. We've also divided them into sub-questions, representing distinct chunks of analysis efforts:
