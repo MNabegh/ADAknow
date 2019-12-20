@@ -53,7 +53,8 @@ On the map below, the radius of the different bubbles is directly proportional t
 
 <b>Violations per Neighbourhood</b>
 <p>
-	For mere curiosity, or deeper insight, the following plots displays the distribution of violations for each of the ethnicity present in our dataset. If you want to know more about the different violations, you can have a look <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp#critical">here</a>. The id of the violations as written below are preceded by a "V" on the website.
+	For mere curiosity, or deeper insight, the following plots displays the distribution of violations for each of the ethnicity present in our dataset. When hovering on the data, you will get a tuple indicating the (id of the violation, percentage of this ethnicity group which contained this violation), as well as the beginning of the violation description. If you want to know more about the different violations, you can have a look <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp#critical">here</a>. The id of the violations as written below are preceded by a "V" on the website.
+
 </p>
 <div class="dropdown" id="eth_maps" style="padding-left: 10%;">
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dedede;">Change plot type  
