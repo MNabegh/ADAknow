@@ -68,7 +68,7 @@ span.emphasis {
     margin-right: auto;
   }
 }
-span.bt_tooltip::before, span.ct_tooltip::before {
+span.it_tooltip::before, span.bt_tooltip::before, span.ct_tooltip::before {
   content: attr(data-tip);
   font-size: 12px;
   position: absolute;
@@ -86,12 +86,12 @@ span.bt_tooltip::before, span.ct_tooltip::before {
   transition: opacity 0.4s ease-out;
 }
 
-span.bt_tooltip:hover::before, span.ct_tooltip:hover::before {
+span.it_tooltip:hover::before, span.bt_tooltip:hover::before, span.ct_tooltip:hover::before {
   opacity: 1;
   bottom: -35px;
 }
 
-span.bt_tooltip, span.ct_tooltip {
+span.it_tooltip, span.bt_tooltip, span.ct_tooltip {
   border-bottom: 2px dotted #404040;
 }
 
@@ -99,6 +99,12 @@ span.ct_tooltip::before {
   left: 43%;
   top: -10%;
   max-width: 45%;
+}
+
+span.it_tooltip::before {
+  max-width: 65%;
+  left: 40%;
+  top: 30%;
 }
 
 #chartoptions li a {

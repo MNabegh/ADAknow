@@ -90,11 +90,285 @@
   </div>
     
   <div class="entry">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+    <p>People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.
+<!-- you should be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect. --></p>
 
-<p>Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.</p>
+<div class="column">
+    <div class="wrapperDoughnut" id="cherry"></div>
+</div>
+<div class="column">
+    <div class="wrapperDoughnut" id="car"></div>
+</div>
 
-<p>Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+<p>As we can see, the temperature and the time of the year do not signficantly affect the percentage of failed inspections.</p>
+
+<p>However, a further look into the data shows us that multiple violations, especially those with codes 2 and 3 have a distribution that is highly skewed - with signficantly more occurences for high temperature, this presents a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example of that is the following plot.</p>
+
+<div class="column">
+<div class="wrapperDoughnut" id="timeline-chart"></div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    function generate_plot() {
+      var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        position: 'top', // top, center, bottom
+                    },
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + "%";
+                },
+                offsetY: 3,
+                style: {
+                    fontSize: '12px',
+                    colors: ["#ffffff"]
+                }
+            },
+            series: [{
+                name: 'Violation percentage',
+                data: [19.0, 20.0, 20.0, 20.0, 19.0, 20.0, 20.0, 20.0, 20.0, 19.0, 18.0, 16.0]
+            }],
+            xaxis: {
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                position: 'top',
+                labels: {
+                    offsetY: -18,
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                tooltip: {
+                    enabled: true,
+                    offsetY: -35,
+                }
+            },
+            fill: {
+                gradient: {
+                    shade: 'light',
+                    type: "horizontal",
+                    shadeIntensity: 0.25,
+                    gradientToColors: undefined,
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [50, 0, 100, 100]
+                },
+            },
+            yaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false,
+                },
+                labels: {
+                    show: false,
+                    formatter: function (val) {
+                        return val + "%";
+                    }
+                }
+            },
+            title: {
+                text: 'Percentage of failed inspections in every month from 2010-2019',
+                floating: true,
+                offsetY: 320,
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(
+            document.querySelector("#cherry"),
+            options
+        );
+        chart.render();
+    }
+    function plot_temp() {
+        var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        position: 'top', // top, center, bottom
+                    },
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + "°F";
+                },
+                offsetY: -20,
+                style: {
+                    fontSize: '12px',
+                    colors: ["#304758"]
+                }
+            },
+            series: [{
+                name: 'Temperature',
+                data: [30.72, 34.43, 46.84, 58.72, 70.94, 80.41, 85.0, 82.92, 75.93, 62.94, 47.61, 36.76]
+            }],
+            xaxis: {
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                position: 'top',
+                labels: {
+                    offsetY: -18,
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                tooltip: {
+                    enabled: true,
+                    offsetY: -35,
+                }
+            },
+            tooltip: {
+                enabled: true,
+                offsetY: -35,
+                marker: {
+                    show: false,
+                },
+            },
+            fill: {
+                gradient: {
+                    shade: 'light',
+                    type: "horizontal",
+                    shadeIntensity: 0.25,
+                    gradientToColors: undefined,
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [50, 0, 100, 100]
+                },
+                colors: ['#730000']
+            },
+            yaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false,
+                },
+                labels: {
+                    show: false,
+                    formatter: function (val) {
+                        return val + "°F";
+                    },
+                },
+            },
+            title: {
+                text: 'Average maximum temperature by month from 2010-2019',
+                floating: true,
+                offsetY: 320,
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(
+            document.querySelector("#car"),
+            options
+        );
+        chart.render();
+    }
+    function plot_hist()
+    {
+        var options = {
+            chart: {
+                type: "histogram",
+                height: 380,
+                foreColor: "#999",
+                events: {
+                dataPointSelection: function(e, chart,opts) {
+                    var arraySelected = []
+                    opts.selectedDataPoints.map((selectedIndex) => {
+                    selectedIndex.map((s) => {
+                        arraySelected.push(chart.w.globals.series[0][s])
+                    })
+                    });
+                    arraySelected = arraySelected.reduce((acc, curr) => acc + curr, 0)                                        
+                    document.querySelector("#selected-count").innerHTML = arraySelected
+                }
+                }
+            },
+            plotOptions: {
+                bar: {
+                dataLabels: {
+                    enabled: false
+                }
+                }
+            },
+            series: [{
+                name: "#Occurences",
+                data: [190, 419, 386, 395, 564, 832, 1207, 68]
+            }],
+            states: {
+                active: {
+                allowMultipleDataPointsSelection: true
+                }
+            },
+            xaxis: {
+                categories: ['20-30°F', '30-40°F', '40-50°F', '50-60°F', '60-70°F', '70-80°F', '80-90°F', '90-100°F'],
+                axisBorder: {
+                show: false
+                },
+                axisTicks: {
+                show: false
+                }
+            },
+            yaxis: {
+                tickAmount: 4,
+                labels: {
+                offsetX: -5,
+                offsetY: -5
+                },
+            },
+            tooltip: {
+                x: {
+                format: "dd MMM yyyy"
+                },
+            },
+            title: {
+                text: 'Histogram of temperature distribution over violations of code 2',
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(document.querySelector("#timeline-chart"), options);
+        chart.render();
+    }
+    generate_plot()
+    plot_temp()
+    plot_hist()
+</script>
+
 
   </div>
 

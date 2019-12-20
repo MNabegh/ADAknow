@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T19:22:21+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;!-- &lt;img src=&quot;/ADAknow/images/chicago.jpg&quot; style=&quot;position: absolute; opacity: 0.2; left: 0; z-index: -1; top: 110px; height: 600px;&quot;/&gt; --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/ADAknow/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/ADAknow/" rel="alternate" type="text/html" /><updated>2019-12-20T21:31:59+01:00</updated><id>http://localhost:4000/ADAknow/feed.xml</id><title type="html">ADAknow</title><subtitle>We are where we eat</subtitle><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><entry><title type="html">Intro</title><link href="http://localhost:4000/ADAknow/intro/" rel="alternate" type="text/html" title="Intro" /><published>2019-12-14T00:00:00+01:00</published><updated>2019-12-14T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/intro</id><content type="html" xml:base="http://localhost:4000/ADAknow/intro/">&lt;!-- &lt;img src=&quot;/ADAknow/images/chicago.jpg&quot; style=&quot;position: absolute; opacity: 0.2; left: 0; z-index: -1; top: 110px; height: 600px;&quot;/&gt; --&gt;
 
 &lt;h1 id=&quot;we-are-where-we-eat&quot;&gt;We are where we eat&lt;/h1&gt;
 &lt;p&gt;We are shaped by what we eat. But we are also shaped by where we eat. Are chefs ready to trade high-quality, fresh ingredients for cheaper stale ones? Are there places and times where food conservation has a subjective meaning? Are large-scale franchises such as McDonald’s and Starbucks under the same level of scrutiny as normal restaurants despite the economic interests at play?&lt;/p&gt;
@@ -7,7 +7,8 @@
   &lt;p&gt;We will do a deep dive into Chicago’s food inspection scene and everything happening behind the curtain.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html"></summary></entry><entry><title type="html">Reviews</title><link href="http://localhost:4000/ADAknow/reviews/" rel="alternate" type="text/html" title="Reviews" /><published>2019-12-05T00:00:00+01:00</published><updated>2019-12-05T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/reviews</id><content type="html" xml:base="http://localhost:4000/ADAknow/reviews/">&lt;p&gt;Can the reviews posted on online services allow us to discover whether a businesses is failing or passing the inspections in Chicago. In this section, we are going to anlyze if there is a relationship between the review rates on Google Local (Google Maps) and their corresponding inspections.&lt;/p&gt;
+&lt;p style=&quot;position: relative&quot;&gt;To achieve this, we will pore over &lt;span class=&quot;it_tooltip&quot; data-tip=&quot;Chicago's Food Inspection Dataset is generated from inspections of restaurants and other food establishments in Chicago from January 1, 2010, to the present. Inspections are performed by staff from the Chicago Department of Public Health’s Food Protection Program using a standardized procedure. The results of the inspection are inputted into a database, then reviewed and approved by a State of Illinois Licensed Environmental Health Practitioner (LEHP).&quot;&gt;Chicago's Food Inspections dataset&lt;/span&gt;, and answer five big questions: 
+&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html"></summary></entry><entry><title type="html">Reviews</title><link href="http://localhost:4000/ADAknow/reviews/" rel="alternate" type="text/html" title="Reviews" /><published>2019-12-05T00:00:00+01:00</published><updated>2019-12-05T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/reviews</id><content type="html" xml:base="http://localhost:4000/ADAknow/reviews/">&lt;p&gt;Can the reviews posted on online services allow us to discover whether a businesses is failing or passing the inspections in Chicago. In this section, we are going to anlyze if there is a relationship between the review rates on Google Local (Google Maps) and their corresponding inspections.&lt;/p&gt;
 
 &lt;p&gt;We have merged the Heath Inspection with Google’s Local dataset, extracted from the  &lt;a href=&quot;http://cseweb.ucsd.edu/~jmcauley/datasets.html&quot;&gt;Recommender Systems Dataset&lt;/a&gt; by Julian McAuley, professor at the University of California, San Diego. After filtering the data, obtaining only the reviews businesses in Chicago and merging them with our dataset, we obtain around 1600 unique businesses for which we have reviews.&lt;/p&gt;
 
@@ -25,11 +26,284 @@
 
 &lt;p&gt;Then, we can say the number rating of a businesses on Google does not seem to be correlated with the number of failed/passed inpspections. Does this mean that users do not really care about the health conditions of a businesses where they go? Probably they do not have the chance to go behind the scene and therefore they cannot know the true conditions of the businesses.&lt;/p&gt;
 
-&lt;p&gt;In this analysis, we do need to highlight that the number of overlapping businesses between the Google dataset and Health Inspection is small (~1600), whith a heavy-tailed distribution on the number of reviews. Therefore, we deduce that a dataset of reviews with more up-to-date reviews and more businneses in both datasets could yield different resutls.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business reviews?</summary></entry><entry><title type="html">Time</title><link href="http://localhost:4000/ADAknow/time/" rel="alternate" type="text/html" title="Time" /><published>2019-12-04T00:00:00+01:00</published><updated>2019-12-04T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/time</id><content type="html" xml:base="http://localhost:4000/ADAknow/time/">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
+&lt;p&gt;In this analysis, we do need to highlight that the number of overlapping businesses between the Google dataset and Health Inspection is small (~1600), whith a heavy-tailed distribution on the number of reviews. Therefore, we deduce that a dataset of reviews with more up-to-date reviews and more businneses in both datasets could yield different resutls.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the business reviews?</summary></entry><entry><title type="html">Time</title><link href="http://localhost:4000/ADAknow/time/" rel="alternate" type="text/html" title="Time" /><published>2019-12-04T00:00:00+01:00</published><updated>2019-12-04T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/time</id><content type="html" xml:base="http://localhost:4000/ADAknow/time/">&lt;p&gt;People’s lifestyles, needs and wants change along the year, so we will investigate whether catering business performances are also subject to change as the seasons go by.
+&lt;!-- you should be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect. --&gt;&lt;/p&gt;
 
-&lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
+&lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;wrapperDoughnut&quot; id=&quot;cherry&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;wrapperDoughnut&quot; id=&quot;car&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the time of the year?</summary></entry><entry><title type="html">Size</title><link href="http://localhost:4000/ADAknow/size/" rel="alternate" type="text/html" title="Size" /><published>2019-12-03T00:00:00+01:00</published><updated>2019-12-03T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/size</id><content type="html" xml:base="http://localhost:4000/ADAknow/size/">&lt;!-- &lt;h2&gt; What is the impact of &lt;span class=&quot;&quot;&gt;the business size&lt;/span&gt;?&lt;/h2&gt; --&gt;
+&lt;p&gt;As we can see, the temperature and the time of the year do not signficantly affect the percentage of failed inspections.&lt;/p&gt;
+
+&lt;p&gt;However, a further look into the data shows us that multiple violations, especially those with codes 2 and 3 have a distribution that is highly skewed - with signficantly more occurences for high temperature, this presents a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example of that is the following plot.&lt;/p&gt;
+
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;wrapperDoughnut&quot; id=&quot;timeline-chart&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- JS --&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot; integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/apexcharts&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    function generate_plot() {
+      var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        position: 'top', // top, center, bottom
+                    },
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + &quot;%&quot;;
+                },
+                offsetY: 3,
+                style: {
+                    fontSize: '12px',
+                    colors: [&quot;#ffffff&quot;]
+                }
+            },
+            series: [{
+                name: 'Violation percentage',
+                data: [19.0, 20.0, 20.0, 20.0, 19.0, 20.0, 20.0, 20.0, 20.0, 19.0, 18.0, 16.0]
+            }],
+            xaxis: {
+                categories: [&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;],
+                position: 'top',
+                labels: {
+                    offsetY: -18,
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                tooltip: {
+                    enabled: true,
+                    offsetY: -35,
+                }
+            },
+            fill: {
+                gradient: {
+                    shade: 'light',
+                    type: &quot;horizontal&quot;,
+                    shadeIntensity: 0.25,
+                    gradientToColors: undefined,
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [50, 0, 100, 100]
+                },
+            },
+            yaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false,
+                },
+                labels: {
+                    show: false,
+                    formatter: function (val) {
+                        return val + &quot;%&quot;;
+                    }
+                }
+            },
+            title: {
+                text: 'Percentage of failed inspections in every month from 2010-2019',
+                floating: true,
+                offsetY: 320,
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(
+            document.querySelector(&quot;#cherry&quot;),
+            options
+        );
+        chart.render();
+    }
+    function plot_temp() {
+        var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        position: 'top', // top, center, bottom
+                    },
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + &quot;°F&quot;;
+                },
+                offsetY: -20,
+                style: {
+                    fontSize: '12px',
+                    colors: [&quot;#304758&quot;]
+                }
+            },
+            series: [{
+                name: 'Temperature',
+                data: [30.72, 34.43, 46.84, 58.72, 70.94, 80.41, 85.0, 82.92, 75.93, 62.94, 47.61, 36.76]
+            }],
+            xaxis: {
+                categories: [&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;],
+                position: 'top',
+                labels: {
+                    offsetY: -18,
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                tooltip: {
+                    enabled: true,
+                    offsetY: -35,
+                }
+            },
+            tooltip: {
+                enabled: true,
+                offsetY: -35,
+                marker: {
+                    show: false,
+                },
+            },
+            fill: {
+                gradient: {
+                    shade: 'light',
+                    type: &quot;horizontal&quot;,
+                    shadeIntensity: 0.25,
+                    gradientToColors: undefined,
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [50, 0, 100, 100]
+                },
+                colors: ['#730000']
+            },
+            yaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false,
+                },
+                labels: {
+                    show: false,
+                    formatter: function (val) {
+                        return val + &quot;°F&quot;;
+                    },
+                },
+            },
+            title: {
+                text: 'Average maximum temperature by month from 2010-2019',
+                floating: true,
+                offsetY: 320,
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(
+            document.querySelector(&quot;#car&quot;),
+            options
+        );
+        chart.render();
+    }
+    function plot_hist()
+    {
+        var options = {
+            chart: {
+                type: &quot;histogram&quot;,
+                height: 380,
+                foreColor: &quot;#999&quot;,
+                events: {
+                dataPointSelection: function(e, chart,opts) {
+                    var arraySelected = []
+                    opts.selectedDataPoints.map((selectedIndex) =&gt; {
+                    selectedIndex.map((s) =&gt; {
+                        arraySelected.push(chart.w.globals.series[0][s])
+                    })
+                    });
+                    arraySelected = arraySelected.reduce((acc, curr) =&gt; acc + curr, 0)                                        
+                    document.querySelector(&quot;#selected-count&quot;).innerHTML = arraySelected
+                }
+                }
+            },
+            plotOptions: {
+                bar: {
+                dataLabels: {
+                    enabled: false
+                }
+                }
+            },
+            series: [{
+                name: &quot;#Occurences&quot;,
+                data: [190, 419, 386, 395, 564, 832, 1207, 68]
+            }],
+            states: {
+                active: {
+                allowMultipleDataPointsSelection: true
+                }
+            },
+            xaxis: {
+                categories: ['20-30°F', '30-40°F', '40-50°F', '50-60°F', '60-70°F', '70-80°F', '80-90°F', '90-100°F'],
+                axisBorder: {
+                show: false
+                },
+                axisTicks: {
+                show: false
+                }
+            },
+            yaxis: {
+                tickAmount: 4,
+                labels: {
+                offsetX: -5,
+                offsetY: -5
+                },
+            },
+            tooltip: {
+                x: {
+                format: &quot;dd MMM yyyy&quot;
+                },
+            },
+            title: {
+                text: 'Histogram of temperature distribution over violations of code 2',
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(document.querySelector(&quot;#timeline-chart&quot;), options);
+        chart.render();
+    }
+    generate_plot()
+    plot_temp()
+    plot_hist()
+&lt;/script&gt;</content><author><name>Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said</name></author><summary type="html">What is the impact of the time of the year?</summary></entry><entry><title type="html">Size</title><link href="http://localhost:4000/ADAknow/size/" rel="alternate" type="text/html" title="Size" /><published>2019-12-03T00:00:00+01:00</published><updated>2019-12-03T00:00:00+01:00</updated><id>http://localhost:4000/ADAknow/size</id><content type="html" xml:base="http://localhost:4000/ADAknow/size/">&lt;!-- &lt;h2&gt; What is the impact of &lt;span class=&quot;&quot;&gt;the business size&lt;/span&gt;?&lt;/h2&gt; --&gt;
 
 &lt;p&gt;When deciding which restaurant to go, a good point to make the decision can be whether we know it or not, especilly we we are abroad. And brands play a big role here. How different is eating in such kind of restaurants from eating in independent restaurants? Let’s discover it.&lt;/p&gt;
 
