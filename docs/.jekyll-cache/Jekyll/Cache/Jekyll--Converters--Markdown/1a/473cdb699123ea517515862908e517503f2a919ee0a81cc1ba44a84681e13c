@@ -1,0 +1,32 @@
+I"ð<p>Peopleâ€™s lifestyle and needs changes with the year passing, so we investigate what should you be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect.</p>
+
+<div class="column">
+    <div class="wrapperDoughnut" id="myChart"></div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    function generate_plot(top, middle, bottom) {
+      var options = {
+        chart: {
+          type: 'line'
+        },
+        series: [{
+          name: 'sales',
+          data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
+        }],
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+        }
+      };
+      var chart = new ApexCharts(document.querySelector("#myChart"), options);
+      chart.render();
+    }
+
+</script>
+
+:ET

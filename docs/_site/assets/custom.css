@@ -31,6 +31,7 @@ span.emphasis {
   transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
+
 .sticky li a {
   color: black;
 }
@@ -38,6 +39,7 @@ span.emphasis {
 .sticky li:hover {
   margin-left: -15px;
 }
+
 .sticky li:hover a {
   color: teal;
 }
@@ -47,28 +49,35 @@ span.emphasis {
     margin-left: 70px;
   }
 }
+
 @media (max-width: 1030px) {
   .sticky-container {
     right: 10px;
     width: 170px;
   }
 }
+
 @media (max-width: 970px) {
   div#main {
     margin-left: 30px;
   }
 }
+
 @media (max-width: 920px) {
   .sticky-container {
     display: none;
   }
-
   div#main {
     margin-left: auto;
     margin-right: auto;
   }
 }
+<<<<<<< HEAD
 span.it_tooltip::before, span.bt_tooltip::before, span.ct_tooltip::before {
+=======
+
+span.bt_tooltip::before, span.ct_tooltip::before {
+>>>>>>> db0702de6416801b7fc45ef5822719331ded4822
   content: attr(data-tip);
   font-size: 12px;
   position: absolute;
@@ -126,8 +135,11 @@ span.it_tooltip::before {
     right: 5%;
   }
 }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 940px;
   }
 }
+
+/*# sourceMappingURL=custom.css.map */
