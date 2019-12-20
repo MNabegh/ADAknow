@@ -2,4 +2,4 @@
 data/
 sprint_1/.ipynb*
 .ipynb_checkpoints
-./*/.jekyll-cache/*
+./docs/.jekyll-cache/*
