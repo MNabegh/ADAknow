@@ -1,0 +1,83 @@
+I"È
+<p>Peopleâ€™s lifestyle and needs changes with the year passing, so we investigate what should you be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect.</p>
+
+<div id="chart"></div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    function generate_plot(top, middle, bottom) {
+        var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+                stacked: true,
+                stackType: '100%'
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                },                
+            },
+            stroke: {
+                width: 1,
+                colors: ['#fff']
+            },
+            series: [{
+                name: 'Pass',
+                data: [top['data'][5], middle['data'][5], bottom['data'][5]]
+            },{
+                name: 'Pass with conditions',
+                data: [top['data'][6], middle['data'][6], bottom['data'][6]]
+            },{
+                name: 'Fail',
+                data: [top['data'][1], middle['data'][1], bottom['data'][1]]
+            },{
+                name: 'Not ready',
+                data: [top['data'][3], middle['data'][3], bottom['data'][3]]
+            },{
+                name: 'No entry',
+                data: [top['data'][2], middle['data'][2], bottom['data'][2]]
+            },{
+                name: 'Out of business',
+                data: [top['data'][4], middle['data'][4], bottom['data'][4]]
+            },{
+                name: 'Business not located',
+                data: [top['data'][0], middle['data'][0], bottom['data'][0]]
+            }],
+            title: {
+                text: 'Average inspection results per category and type of business'
+            },
+            xaxis: {
+                categories: [top['name'], middle['name'], bottom['name']],
+            },            
+            tooltip: {
+                    y: {
+                        formatter: function(val) {
+                        return val + "%"
+                    }
+                }
+            },
+            fill: {
+                opacity: 1                
+            },            
+            legend: {
+                position: 'top',
+                horizontalAlign: 'left',
+                offsetX: 40
+            }
+        }
+        $('div#chart').html('')
+        var chart = new ApexCharts(
+            document.querySelector("#chart"),
+            options
+        );        
+        chart.render();
+    }
+
+</script>
+
+:ET

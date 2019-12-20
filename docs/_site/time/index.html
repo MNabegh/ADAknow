@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time – ADAknow – We are where we eat</title>
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Time | ADAknow</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Time" />
+<meta name="author" content="Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What is the impact of the time of the year?" />
+<meta property="og:description" content="What is the impact of the time of the year?" />
+<link rel="canonical" href="http://localhost:4000/ADAknow/time/" />
+<meta property="og:url" content="http://localhost:4000/ADAknow/time/" />
+<meta property="og:site_name" content="ADAknow" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-04T00:00:00+01:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","dateModified":"2019-12-04T00:00:00+01:00","datePublished":"2019-12-04T00:00:00+01:00","headline":"Time","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ADAknow/time/"},"url":"http://localhost:4000/ADAknow/time/","author":{"@type":"Person","name":"Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said"},"description":"What is the impact of the time of the year?","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="What is the impact of the time of the year?" />
+    <meta property="og:description" content="What is the impact of the time of the year?" />
+    
+    <meta name="author" content="ADAknow" />
+
+    
+    <meta property="og:title" content="Time" />
+    <meta property="twitter:title" content="Time" />
+    
+
+    
+    <meta property="og:image" content="http://localhost:4000/images/adaknow.png"/>
+    <meta property="twitter:image" content="http://localhost:4000/images/adaknow.png"/>
+    
+    <meta property="og:site_name" content="Amit Merchant - Software Engineer"/>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/ADAknow/assets/vendor/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/ADAknow/assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="/ADAknow/assets/custom.css" />
+    <link rel="alternate" type="application/rss+xml" title="ADAknow - We are where we eat" href="/ADAknow/feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/time/" />
+
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ADAknow/images/favicon-32x32.png">
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="/ADAknow/" class="site-avatar"><img src="/ADAknow/images/adaknow.png" /></a>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="/ADAknow/">ADAknow</a></h1>
+              <p class="site-description">We are where we eat</p> 
+            </div>
+
+            <nav>
+              <a href="/ADAknow/"><strong>Data Story</strong></a>
+              <span style="margin: 0 4px; font-weight: lighter;">|</span>
+              <a href="https://github.com/obiwit/ADAknow" style="margin: 0;">Analysis Source Code</a>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          <article class="post detailed">
+  <h1>Time</h1>
+
+  <div>
+    <p class="author_title">Alfonso Amayuelas, Beatriz Borges, Jade Cock, Mahmoud Said  ·  December  4, 2019</p>
+    
+    <div class="post-tags">
+      
+      
+    </div>
+  </div>
+    
+  <div class="entry">
+    <p>People’s lifestyle and needs changes with the year passing, so we investigate what should you be watching out for as a person who wants to buy some food or a facility owner that needs to know what to expect.</p>
+
+<div class="column">
+<div class="wrapperDoughnut" id="cherry"></div>
+</div>
+
+<div class="column">
+<div class="wrapperDoughnut" id="car"></div>
+</div>
+
+<p>As we can see here the temperature and the time of the year does not affect the percentage of failed inspections signficantly.</p>
+
+<p>But then a further look into the data shows us that multiple violations especially those with codes 2 and 3 have a distribution, that is highly skewed with way more occurences for high temperature, this present a potential risk as both those violations are critical violations. Both codes are related to proper food storage, and looking at some examples of the violations, we can find notes that referigator being broken down is repeatedly reported. This is a normal problem where high temperatures causes sometimes the breaking down of referigerators if proper regular maintenance is not done. An example of that is the following plot.</p>
+
+<div class="column">
+<div class="wrapperDoughnut" id="timeline-chart"></div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<script>
+    function generate_plot() {
+      var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        position: 'top', // top, center, bottom
+                    },
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + "%";
+                },
+                offsetY: -20,
+                style: {
+                    fontSize: '12px',
+                    colors: ["#304758"]
+                }
+            },
+            series: [{
+                name: 'Violation percentage',
+                data: [19.0, 20.0, 20.0, 20.0, 19.0, 20.0, 20.0, 20.0, 20.0, 19.0, 18.0, 16.0]
+            }],
+            xaxis: {
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                position: 'top',
+                labels: {
+                    offsetY: -18,
+                },
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false
+                },
+                crosshairs: {
+                    fill: {
+                        type: 'gradient',
+                        gradient: {
+                            colorFrom: '#D8E3F0',
+                            colorTo: '#BED1E6',
+                            stops: [0, 100],
+                            opacityFrom: 0.4,
+                            opacityTo: 0.5,
+                        }
+                    }
+                },
+                tooltip: {
+                    enabled: true,
+                    offsetY: -35,
+                }
+            },
+            fill: {
+                gradient: {
+                    shade: 'light',
+                    type: "horizontal",
+                    shadeIntensity: 0.25,
+                    gradientToColors: undefined,
+                    inverseColors: true,
+                    opacityFrom: 1,
+                    opacityTo: 1,
+                    stops: [50, 0, 100, 100]
+                },
+            },
+            yaxis: {
+                axisBorder: {
+                    show: false
+                },
+                axisTicks: {
+                    show: false,
+                },
+                labels: {
+                    show: false,
+                    formatter: function (val) {
+                        return val + "%";
+                    }
+                }
+            },
+            title: {
+                text: 'Percentage of failed inspections in every month from 2010-2019',
+                floating: true,
+                offsetY: 320,
+                align: 'center',
+                style: {
+                    color: '#444'
+                }
+            },
+        };
+        var chart = new ApexCharts(
+            document.querySelector("#cherry"),
+            options
+        );
+        chart.render();
+    }
+        function plot_temp() {
+            var options = {
+                    chart: {
+                        height: 350,
+                        type: 'bar',
+                    },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                position: 'top', // top, center, bottom
+                            },
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function (val) {
+                            return val + "°C";
+                        },
+                        offsetY: -20,
+                        style: {
+                            fontSize: '12px',
+                            colors: ["#304758"]
+                        }
+                    },
+                    series: [{
+                        name: 'Temperature',
+                        data: [30.72, 34.43, 46.84, 58.72, 70.94, 80.41, 85.0, 82.92, 75.93, 62.94, 47.61, 36.76]
+                    }],
+                    xaxis: {
+                        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                        position: 'top',
+                        labels: {
+                            offsetY: -18,
+                        },
+                        axisBorder: {
+                            show: false
+                        },
+                        axisTicks: {
+                            show: false
+                        },
+                        crosshairs: {
+                            fill: {
+                                type: 'gradient',
+                                gradient: {
+                                    colorFrom: '#D8E3F0',
+                                    colorTo: '#BED1E6',
+                                    stops: [0, 100],
+                                    opacityFrom: 0.4,
+                                    opacityTo: 0.5,
+                                }
+                            }
+                        },
+                        tooltip: {
+                            enabled: true,
+                            offsetY: -35,
+                        }
+                    },
+                    fill: {
+                        gradient: {
+                            shade: 'light',
+                            type: "horizontal",
+                            shadeIntensity: 0.25,
+                            gradientToColors: undefined,
+                            inverseColors: true,
+                            opacityFrom: 1,
+                            opacityTo: 1,
+                            stops: [50, 0, 100, 100]
+                        },
+                        colors: ['#730000']
+                    },
+                    yaxis: {
+                        axisBorder: {
+                            show: false
+                        },
+                        axisTicks: {
+                            show: false,
+                        },
+                        labels: {
+                            show: false,
+                            formatter: function (val) {
+                                return val + "°C";
+                            },
+                        },
+                    },
+                    title: {
+                        text: 'Average maximum temperature by month from 2010-2019',
+                        floating: true,
+                        offsetY: 320,
+                        align: 'center',
+                        style: {
+                            color: '#444'
+                        }
+                    },
+                };
+                var chart = new ApexCharts(
+                    document.querySelector("#car"),
+                    options
+                );
+                chart.render();
+            }
+            function plot_hist()
+            {
+                var options = {
+                    chart: {
+                        type: "histogram",
+                        height: 380,
+                        foreColor: "#999",
+                        events: {
+                        dataPointSelection: function(e, chart,opts) {
+                            var arraySelected = []
+                            opts.selectedDataPoints.map((selectedIndex) => {
+                            selectedIndex.map((s) => {
+                                arraySelected.push(chart.w.globals.series[0][s])
+                            })
+                            });
+                            arraySelected = arraySelected.reduce((acc, curr) => acc + curr, 0)                                        
+                            document.querySelector("#selected-count").innerHTML = arraySelected
+                        }
+                        }
+                    },
+                    plotOptions: {
+                        bar: {
+                        dataLabels: {
+                            enabled: false
+                        }
+                        }
+                    },
+                    series: [{
+                        name: "#Occurences",
+                        data: [190, 419, 386, 395, 564, 832, 1207, 68]
+                    }],
+                    states: {
+                        active: {
+                        allowMultipleDataPointsSelection: true
+                        }
+                    },
+                    xaxis: {
+                        categories: ['20-30°C', '30-40°C', '40-50°C', '50-60°C', '60-70°C', '70-80°C', '80-90°C', '90-100°C'],
+                        axisBorder: {
+                        show: false
+                        },
+                        axisTicks: {
+                        show: false
+                        }
+                    },
+                    yaxis: {
+                        tickAmount: 4,
+                        labels: {
+                        offsetX: -5,
+                        offsetY: -5
+                        },
+                    },
+                    tooltip: {
+                        x: {
+                        format: "dd MMM yyyy"
+                        },
+                    },
+                    title: {
+                        text: 'Histogram of temperature distribution over violations of code 2',
+                        floating: true,
+                        offsetY: 320,
+                        align: 'center',
+                        style: {
+                            color: '#444'
+                        }
+                    },
+                };
+                var chart = new ApexCharts(document.querySelector("#timeline-chart"), options);
+                chart.render();
+            }
+    generate_plot()
+    plot_temp()
+    plot_hist()
+</script>
+
+
+  </div>
+
+  <div>
+    <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text=Time&url=http://localhost:4000/time/" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/time/" target="_blank">Facebook</a></p>
+  </div>
+
+  <!--<div class="date">
+    Written on December  4, 2019
+  </div>-->
+
+  
+</article>
+
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container" style="text-align: center;">
+          <p style="margin-bottom: 0;">An analysis made with <i class="fas fa-heart"></i> by Alfonso, Beatriz, Jade, and Mahmoud. </p>
+          <p style="margin-bottom: 0;">EPFL's Applied Data Analysis class, 2019.</p>
+            
+          <footer class="footer">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/ADAknow/assets/custom.js"></script>
+  </body>
+</html>
