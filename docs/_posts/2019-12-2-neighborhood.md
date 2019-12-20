@@ -5,9 +5,7 @@ excerpt: What is the impact of <span class="emphasis">the neighborhood</span>?
 small_excerpt: the neighborhood?
 ---
 
-<p>Apart from the type of service provided, other permanent factors affect a business, but maybe none more than its location. In the data, the business have one of 68 distinct possible zip codes. To simplify for a first analysis, we grouped them into 7 zones, based on <a href="https://www.seechicagorealestate.com/chicago-zip-codes-by-neighborhood.php">Chigaco's Fultron Grace real estate data</a>.</p>
-
-<p>On the other hand, (without considering prevalent ethnicities in each city block but instead) grouping by the more general zones, we can observe that, with this splitting method there are no observable differences in the probability of a facility's likelihood to pass an inspection. However, we will take a deeper look, using a geographical split based on prevalent ethnicities to assess whether this still remains the case.</p>
+<p>Apart from the type of service provided, other permanent factors affect a business, but maybe none more than its location. In the data, the business have one of 68 distinct possible zip codes. To simplify for a first analysis, we grouped them into 7 zones, based on <a href="https://www.seechicagorealestate.com/chicago-zip-codes-by-neighborhood.php">Chigaco's Fultron Grace real estate data</a>. However, with this splitting method there are no observable differences in the probability of a facility's likelihood to pass or fail an inspection. As such, we will take a deeper look, using a geographical split based on prevalent ethnicities to assess whether this still remains the case.</p>
 
 <hr style="opacity: 0.2;">
 
