@@ -43,7 +43,6 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="/ADAknow/assets/vendor/fontawesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/ADAknow/assets/style.css" />
     <link rel="stylesheet" type="text/css" href="/ADAknow/assets/custom.css" />
@@ -71,8 +70,6 @@
               <a href="/ADAknow/"><strong>Data Story</strong></a>
               <span style="margin: 0 4px; font-weight: lighter;">|</span>
               <a href="https://github.com/obiwit/ADAknow" style="margin: 0;">Analysis Source Code</a>
-              <!-- <a href="/ADAknow/search">Search</a>
-              <a href="/ADAknow/about">About</a> -->
             </nav>
           </header>
         </div>
@@ -95,12 +92,11 @@
   <div class="entry">
     <p>The district of Chicago is full of different restaurants and catering businesses. These range from restaurants to bars to grocery stores to school cafeterias to hospitals to many others. However, these are not present at the same frequency. </p>
 
-<p style="position: relative;">At a first look, it's impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. The bar chart bellow reflects the number of inspections per <span class="bt_tooltip" data-tip="The original dataset had more than 440 different facility types. This number was reduced to 43 through a autonomous grouping method - which would group non-representative categories into either the closest representative one, or instead into a (newly created) miscellaneous category.">business type</span>, for the 9 most common types (and a tenth type, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #765145; border-radius: 10%; padding: 0.5% 0.75%;">other types</span> representing the remaining 34 categories).</p>
-<p><!--background: #e0e0e0;--></p>
+<p style="position: relative;">At a first look, it's impossible to be certain on whether the difference in facilities inspections reflects some bias or simply the food business landscape in Chicago. The donut chart bellow reflects the number of inspections per <span class="bt_tooltip" data-tip="The original dataset had more than 440 different facility types. This number was reduced to 43 through a autonomous grouping method - which would group non-representative categories into either the closest representative one, or instead into a (newly created) miscellaneous category.">business type</span>, for the 9 most common types (and a tenth type, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #765145; border-radius: 10%; padding: 0.5% 0.75%;">other types</span> representing the remaining 34 categories).</p>
 
 <div id="visits_chart"></div>
 
-<p> To ascertain whether these inspections favor a particular type of business, we can examine the ratios of their inspection results. An inspection results in one of seven possible outputs: <span style="font-family: monospace;font-size: 0.9em; color: white; background: #B8BD79; border-radius: 10%; padding: 0.5% 0.75%;">Pass</span>, <span style="font-family: monospace;font-size: 0.9em; color: #404040; background: #FED18E; border-radius: 10%; padding: 0.5% 0.75%;">Pass with conditions</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #FF8C57; border-radius: 10%; padding: 0.5% 0.75%;">Fail</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #EF4F43; border-radius: 10%; padding: 0.5% 0.75%;">Not ready</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #373A29; border-radius: 10%; padding: 0.5% 0.75%;">No entry</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #991163; border-radius: 10%; padding: 0.5% 0.75%;">Out of business</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #69919F; border-radius: 10%; padding: 0.5% 0.75%;">Business not located</span>. You can explore these ratios yourself in the plot below.</p>
+<p> To ascertain whether these inspections favor a particular type of business, we can examine the ratios of their inspection results. An inspection results in one of seven possible outcomes: <span style="font-family: monospace;font-size: 0.9em; color: white; background: #B8BD79; border-radius: 10%; padding: 0.5% 0.75%;">Pass</span>, <span style="font-family: monospace;font-size: 0.9em; color: #404040; background: #FED18E; border-radius: 10%; padding: 0.5% 0.75%;">Pass with conditions</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #FF8C57; border-radius: 10%; padding: 0.5% 0.75%;">Fail</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #EF4F43; border-radius: 10%; padding: 0.5% 0.75%;">Not ready</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #373A29; border-radius: 10%; padding: 0.5% 0.75%;">No entry</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #991163; border-radius: 10%; padding: 0.5% 0.75%;">Out of business</span>, <span style="font-family: monospace;font-size: 0.9em; color: white; background: #69919F; border-radius: 10%; padding: 0.5% 0.75%;">Business not located</span>. You can explore these ratios yourself in the plot below.</p>
 
 <p style="position: relative;">The plot has 3 bars, the top one with the global average accross all entries in the data, the second the average across one <span class="ct_tooltip" data-tip="From the 43 food-related business types, we create 9 non-mutually-exclusive categories, based on their area of business.">category</span>, and the third one the average results for any one of the 43 specific business types.</p>
 
@@ -126,52 +122,6 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <script>
-    // visits = {
-    //     'bakery': [2905],
-    //     'banquet': [123],
-    //     'banquet hall': [187],
-    //     'cafeteria': [84],
-    //     'catering': [1208],
-    //     'charter school': [168],
-    //     "children's services facility": [3152],
-    //     'coffee shop': [129],
-    //     'convenience': [65],
-    //     'convenience store': [83],
-    //     'daycare': [82],
-    //     'daycare (2 - 6 years)': [2688],
-    //     'daycare (2 years)': [53],
-    //     'daycare (under 2 years)': [249],
-    //     'daycare above and under 2 years': [2356],
-    //     'daycare combo 1586': [755],
-    //     'gas station': [213],
-    //     'golden diner': [565],
-    //     'grocery store': [25014],
-    //     'grocery/restaurant': [144],
-    //     'hospital': [551],
-    //     'kiosk': [107],
-    //     'liquor': [869],
-    //     'live poultry': [87],
-    //     'long term care': [1366],
-    //     'misc': [1134],
-    //     'mobile food dispenser': [826],
-    //     'mobile food preparer': [593],
-    //     'mobile frozen desserts vendor': [106],
-    //     'mobile prepared food vendor': [124],
-    //     'navy pier kiosk': [66],
-    //     'not available': [4778],
-    //     'private school': [108],
-    //     'restaurant': [130140],
-    //     'school': [12081],
-    //     'shared kitchen': [144],
-    //     'shared kitchen user (long term)': [181],
-    //     'shared kitchen user (short term)': [37],
-    //     'shelter': [161],
-    //     'special event': [216],
-    //     'stadium': [45],
-    //     'tavern': [337],
-    //     'wholesale': [547]
-    //     }
-    // 194827 - 130140 - 25014 - 12081 - 4778 - 3152 - 2905 -2688-2356-1366
     visits = {
         'bakery': 2905,
         'children\'s services facility': 3152,
@@ -209,7 +159,6 @@
             }
         },
         colors: ['#3A0725', '#AF0F30', '#E45901', '#F7BA00', '#727D09', '#E3497E', '#E39E48', '#23D38A', '#DA56FB', '#775146']
-        // ['#43424A', '#A8CE3F', '#A6538C', '#DA3129', '#FDDC4C', '#62BDDB', '#0FDD00', '#B178CD', '#380D49', '#E63593', '#FB4918', '#1B1FDB', '#72FB81', '#F2486F', '#1E1B5A', '#269F29', '#0D0D4B', '#91F7ED', '#2CF501', '#E948F0', '#5C297E', '#A2A510', '#8617ED', '#8EF1B9', '#06A3D4', '#D69FF0', '#251A88', '#64AFCF', '#08B204', '#C40F43', '#AE2D2E', '#57C6E2', '#F87C56', '#E6985B', '#AE232B', '#EF512D', '#98E459', '#D64D34', '#4F2E9A', '#9C2408', '#E07599', '#9DB4ED', '#B8BD1D', '#BE4806', '#FBEA75', '#DBE13A', '#B4D932', '#7CD73B', '#E04B64', '#11F519', '#8B96D4', '#71ACC1', '#49CA3C', '#FF7DA0', '#279509', '#3E4FA6']
     }
     var chart = new ApexCharts(
         document.querySelector("#visits_chart"),
@@ -282,7 +231,6 @@
                 offsetX: 40
             },
             colors: ['#B8BD79', '#FED18E', '#FF8C57', '#EF4F43', '#373A29', '#991163', '#69919F']
-            // ['#6F6456', '#CDDC49', '#CB7E94', '#E94B30', '#FEE659', '#A1CFDD']
         }
         $('div#pf_chart').html('')
         var chart = new ApexCharts(
@@ -382,14 +330,6 @@
         'school', 'shared kitchen', 'shared kitchen user (long term)',
         'shared kitchen user (short term)', 'shelter', 'special event',
         'stadium', 'tavern', 'wholesale']
-    // Order:
-        // Business Not Located     
-        // Fail                    
-        // No Entry                 
-        // Not Ready                
-        // Out of Business          
-        // Pass                    
-        // Pass w/ Conditions  
     var pf_ratios = {
         'per_type': {
             'shared kitchen user (short term)': [0.0, 0.0, 0.0, 0.0, 0.0, 97.3, 2.7],
@@ -515,7 +455,6 @@
     generate_plot({'name': 'All', 'data': pf_ratios['all']['all']}, 
                   {'name': 'All categories', 'data': pf_ratios['all']['all']},
                   {'name': 'All types', 'data': pf_ratios['all']['all']})
-
 </script>
 
 

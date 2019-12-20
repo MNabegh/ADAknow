@@ -112,13 +112,13 @@ span.ct_tooltip::before {
 }
 
 @media (min-width: 1400px) {
-  // - relocate sidebar
+  // relocate sidebar
   .sticky-container{
     right: 5%;
   }
 }
 @media (min-width: 1500px) {
-  // - expand container width
+  // expand container width
   .container {
     max-width: 940px;
   }
