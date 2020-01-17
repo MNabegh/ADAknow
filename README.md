@@ -48,4 +48,20 @@ We've brought forward 3 big research questions we want to tackle on. We've also 
    - Finish answering question 3 (cont.)
    - Finish writing the data story
 
-
+# Team Contributions
+- **Alfonso**
+  * initial data exploration,
+  * analysis of big chains/business size and google review's impact on inspection's result, 
+  * poster creation and presentation preparation
+- **Beatriz**
+  * initial data exploration, 
+  * analysis of business type and other permanent external factors' (city block) impact on inspection's result, 
+  * poster creation and presentation preparation
+- **Jade**
+  * initial data cleaning, 
+  * analysis of business' neighborhood location's and prevalent ethnicity impact on inspection's result, 
+  * poster creation and presentation preparation
+- **Mahmoud** 
+  * initial data cleaning, 
+  * analysis of temporary external factors' (temperature) impact on inspection's result, 
+  * poster creation and presentation preparation
